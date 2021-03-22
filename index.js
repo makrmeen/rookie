@@ -1,14 +1,16 @@
-const mainMenu = document.getElementsByClassName('mainMenu'); 
-const closeMenu = document.getElementsByClassName('closeMenu');
-const openMenu = document.getElementsByClassName('openMenu'); 
+const mainMenu = document.querySelector('.mainMenu'); 
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu'); 
 
 openMenu.addEventListener('click', (show) => {
-    mainMenu.style.display = 'flex'; 
-})
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+});
+closeMenu.addEventListener('click', (close) => {
+    mainMenu.style.top = '-100%';
+});
 
-closeMenu.addEventListener('click', (hide) => {
-        mainMenu.style.top = '-100%';
-    })
+
 
 
 
