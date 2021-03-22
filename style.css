@@ -70,7 +70,7 @@ img {
 	height: 30px;
 }
 
-/* .dropdown {
+.dropdown {
 	display: inline-block;
 	position: relative;
 }
@@ -86,8 +86,8 @@ img {
 }
 
 .dropdown:hover .dropdown-content {
-	display: flex;
-} */
+	display: block;
+}
 
 #teaser {
 	display: flex;
