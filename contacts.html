@@ -38,41 +38,35 @@
         <h1>Contact Rookie </h1>
  
     <form >
+            <div class="fname">
+            <label>Full Name:</label>
+            <input type="text" placeholder="Babe Ruth"></input>
+            </div>
 
-        <div class="fname">
-         <label for="fname">Full Name:</label>
-         <input type="text" id="fname" name="fname" placeholder="Babe Ruth"></input>
-        </div>
+            <div class="email">
+                <label>Email address</label>
+                <input type="text" placeholder="email@rookie.com"><br><br>
+            </div>
+    
+            <div class="message">
+                <label for="message">Message</label><br>
+                <textarea type="form-control" rows="10" cols="50"></textarea>
+            </div>
 
-        <div class="email">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="text" id="email" name="email" placeholder="email@rookie.com"><br><br>
-        </div>
-   
-        
-        <div class="message">
-            <label for="message">Message</label><br>
-            <textarea type="form-control" id="bigTextarea" rows="10" cols="50"></textarea>
-          </div>
+            <div class="form-check">
+                <input type="checkbox">
+                <label for="suscribe">Suscribe to the Newsletter</label><br>
+            </div>
+    </form> 
 
-         <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck">Suscribe me to the Newsletter</label><br>
-        </div>
-
-             <input type="submit" id="submit"  value="Submit">
-            </form> 
-
-        <button onclick="myFunction()">Message</button>
+        <button onclick="myFunction()">Submit</button>
 
             <p id="thankYou"></p>
 
             <script>
             function myFunction() {
-            document.getElementById("thankYou").innerHTML = "Thank You for contacting us fname!" ;
-            }
+            document.getElementById("thankYou").innerHTML = "Thank You for contacting us!" ;            }
             </script>      
-    </form>
-
+   
 </body>
 </html>
