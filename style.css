@@ -1,3 +1,4 @@
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -131,6 +132,54 @@ h2 {
 	margin: 5px;
 }
 
+
+
+/* Footer */
+
+.Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto; 
+    background-color: #FFFBF7; 
+    text-align: center;
+}
+
+a i {
+    font-size:30px;
+    padding: 10px;
+    color: #171738;
+}
+
+.Footer-Border {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#Impressum {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 20px; 
+    padding-bottom: 10px
+}
+
+#Inc {
+    margin-bottom:0;
+    font-size: 12px;
+}
+ #Email {
+     margin-top:0; 
+     margin-bottom: 20px;
+     font-size: 12px;
+ }
+
+
+ 
+/* for mobile version */
+
 @media (max-width: 765px) {
 	nav .logo {
 		display: inline;
@@ -217,3 +266,4 @@ h2 {
 		height: 60px;
 	}
 }
+
