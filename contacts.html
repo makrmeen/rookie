@@ -39,8 +39,8 @@
  
     <form >
             <div class="fname">
-            <label>Full Name:</label>
-            <input type="text" placeholder="Babe Ruth"></input>
+                <label>Full Name:</label>
+                <input type="text" placeholder="Babe Ruth"></input>
             </div>
 
             <div class="email">
@@ -60,13 +60,13 @@
     </form> 
 
         <button onclick="myFunction()">Submit</button>
-
-            <p id="thankYou"></p>
-
-            <script>
+        <br>
+             <p id="thankYou"></p>
+        <script>
             function myFunction() {
-            document.getElementById("thankYou").innerHTML = "Thank You for contacting us!" ;            }
-            </script>      
-   
+            document.getElementById("thankYou").innerHTML = "`Thank You for contacting us +${fname}+!'";        }
+        </script>   
+
+   </div>
 </body>
 </html>
