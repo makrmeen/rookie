@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <script src = "https://kit.fontawesome.com/8187b285e6.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +15,71 @@
     <title>Rookie</title>
 </head>
 <body>
-    <a href="about.html">About Us</a>
-    <a href="cards.html">Info</a>
-    <a href="sports.html">Sports</a>
-    <a href="contacts.html">Contact Us</a>
-    
-    <div class="Footer">
-     <div class="Footer-Border">
-      <a href="https://fr-fr.facebook.com/WildCodeSchool/"><i class="fab fa-facebook-square"></i></a>
-      <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=de"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/school/wild-code-school/?originalSubdomain=de"><i class="fab fa-linkedin"></i></a>
-     </div>
-      <p id="Impressum">ROOKIE</p>
-      <p id="Inc">Rookie Wilders Inc. 2021 All rights reserved.</p>
-      <p id="Email">info@rookie.com</p>
-    </div>  
-  
+          <nav>
+            <div class = "logo"><h1>Rookie</h1></div>
+
+            <div class = "openMenu"><i class="fas fa-bars"></i></div>
+
+            <ul class = "mainMenu">
+
+            <li><a href="index.html">Homepage</a></li>
+            <li class = "dropdown"><a href="sports.html">Sports</a></li>
+           
+            <li class = "dropdown-content">Tennis</li>
+            <li class = "dropdown-content">Surf</li>
+            <li class = "dropdown-content">Rock climbing</li>
+          
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+
+            <div class = "closeMenu"><i class = "fas fa-times"></i></div>
+          
+            <span class = "social-media">
+            <i class = "fab fa-facebook"></i>  
+            <i class = "fab fa-instagram"></i>
+            <i class = "fab fa-linkedin"></i>
+          </span>
+          </ul>
+       
+
+          </nav>
+
+          <div class ="break"></div>
+
+<!-- change image? -->
+ <img src="assets/Tennis-field2.jpg"/>
+
+ <p id = "teaser">Your beginners guide to  your new sport activity. Select one sport and discover how to start practicing it.</p>
+   
+
+<div class = "break"></div>
+
+<h2>Pick your sport</h2>
+
+<div class = "container">
+  <div class = "sport-icon" id = "tennis">
+    <h5 class = "tennis-subheading"> Tennis</h5>
+  </div>
+  <div class = "sport-icon" id ="surf">
+    <h5 class = "surf-subheading"> Surf</h5>
+  </div>
+    <div class = "sport-icon" id = "climbing">
+      <h5 class = "climbing-subheading"> Rock Climbing</h5>
+    </div>
+    <!-- <div class = "sport-icon">
+  </div> -->
+</div>
+<div class="Footer">
+    <div class="Footer-Border">
+     <a href="https://fr-fr.facebook.com/WildCodeSchool/"><i class="fab fa-facebook-square"></i></a>
+     <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=de"><i class="fab fa-instagram"></i></a>
+     <a href="https://www.linkedin.com/school/wild-code-school/?originalSubdomain=de"><i class="fab fa-linkedin"></i></a>
+    </div>
+     <p id="Impressum">ROOKIE</p>
+     <p id="Inc">Rookie Wilders Inc. 2021 All rights reserved.</p>
+     <p id="Email">info@rookie.com</p>
+   </div>  
+<script src="./index.js"></script>
 </body>
 
 </html>
