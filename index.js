@@ -11,7 +11,7 @@ closeMenu.addEventListener("click", (close) => {
   mainMenu.style.top = "-100%";
 });
 
-//dropdown menu (Sports)
+//dropdown menu desktop (Sports)
 const dropdown = document.querySelector('.dropdown-content');
 const dropdownButton = document.querySelector('.dropdown-button');
 const closeDropdown = document.querySelector('.dropdown-closing-button');
@@ -24,6 +24,9 @@ dropdownButton.addEventListener ('click', (show) => {
    dropdown.style.display = 'block';
       }
   })
+
+
+
 
 const sportContent = [
   {
@@ -77,7 +80,8 @@ const createSport = (event) => {
 
 
   container.appendChild(sportImg);
-=======
+
+  
 //Contact page
 // function myFunction() {
 //     document.getElementById("thankYou").innerHTML = "Thank You for contacting us fname!" ;
