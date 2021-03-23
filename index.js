@@ -1,7 +1,7 @@
 //Hamburger menu
-const mainMenu = document.querySelector('.mainMenu'); 
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu'); 
+const mainMenu = document.querySelector(".mainMenu");
+const closeMenu = document.querySelector(".closeMenu");
+const openMenu = document.querySelector(".openMenu");
 
 openMenu.addEventListener("click", (show) => {
   mainMenu.style.display = "flex";
@@ -12,19 +12,19 @@ closeMenu.addEventListener("click", (close) => {
 });
 
 //dropdown menu (Sports)
-const dropdown = document.querySelector('.dropdown-content');
-const dropdownButton = document.querySelector('.dropdown-button');
-const closeDropdown = document.querySelector('.dropdown-closing-button');
+const dropdown = document.querySelector(".dropdown-content");
+const dropdownButton = document.querySelector(".dropdown-button");
+const closeDropdown = document.querySelector(".dropdown-closing-button");
 
-dropdownButton.addEventListener ('click', (show) => {
-  if (dropdown.style.display === 'block') {
-   dropdown.style.display = 'none';
-} 
-  else {
-   dropdown.style.display = 'block';
-      }
-  })
+dropdownButton.addEventListener("click", (show) => {
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+});
 
+//sport content
 const sportContent = [
   {
     name: "Tennis",
@@ -58,9 +58,11 @@ const sportContent = [
   },
 ];
 
+//creation of sport content
+
 const createSport = (event) => {
   //change page
-  window.location.href = "sport.html";
+  window.location.href = "sports.html";
 
   //add event click target id
   const x = event.target;
@@ -75,16 +77,7 @@ const createSport = (event) => {
   sportImg.classList.add("img");
   sportImg.style.backgroundImage = `url("${sportContent[clickedId].picture}")`;
 
-
   container.appendChild(sportImg);
-=======
-//Contact page
-// function myFunction() {
-//     document.getElementById("thankYou").innerHTML = "Thank You for contacting us fname!" ;
-//   }
-
-
-
   //add title
   const title = document.createElement("h1");
   title.innerText = sportContent[clickedId].name;
@@ -95,3 +88,8 @@ const createSport = (event) => {
   sportIntro.innerHTML = sportContent[clickedId].intro;
   container.appendChild(sportIntro);
 };
+
+//Contact page
+// function myFunction() {
+//     document.getElementById("thankYou").innerHTML = "Thank You for contacting us fname!" ;
+//   }
