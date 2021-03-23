@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
+  <head>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src = "https://kit.fontawesome.com/8187b285e6.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script src="https://kit.fontawesome.com/472ac0f0b6.js" crossorigin="anonymous"></script>
     <title>Contact Us</title>
 </head>
+
+
 <header>
   <nav>
     <div class = "logo"><h1>Rookie</h1></div>
@@ -25,19 +25,19 @@
 
     <li><a class = "dropdown-button">Sports</a>
       <ul class = "dropdown-content">
-        <li><a href = "#">Tennis</a></li>
+        <li><a href = "tennis.html">Tennis</a></li>
         <li><a href = "#">Surf</a></li>
         <li><a href = "#">Rock climbing</a></li>
      </li>
-    </ul>
-  
+    </ul >
+
     <li><a href="about.html">About Us</a></li>
     <li><a href="contacts.html">Contact Us</a></li>
 
     <div class = "closeMenu"><i class = "fas fa-times"></i></div>
-  
+
     <span class = "social-media">
-    <i class = "fab fa-facebook"></i>  
+    <i class = "fab fa-facebook"></i>
     <i class = "fab fa-instagram"></i>
     <i class = "fab fa-linkedin"></i>
   </span>
@@ -47,53 +47,53 @@
 
 <body>
 
+
   <div style="text-align:center;">   
 
-    <h1>Contact Rookie </h1>
+        <h1>Contact Rookie </h1>
+ 
+    <form >
+            <div class="fname">
+                <label>Full Name:</label>
+                <input type="text" placeholder="Babe Ruth"></input>
+            </div>
 
-<form >
-        <div class="fname">
-            <label>Full Name:</label>
-            <input type="text" placeholder="Babe Ruth"></input>
-        </div>
+            <div class="email">
+                <label>Email address</label>
+                <input type="text" placeholder="email@rookie.com"><br><br>
+            </div>
+    
+            <div class="message">
+                <label for="message">Message</label><br>
+                <textarea type="form-control" rows="10" cols="50"></textarea>
+            </div>
 
-        <div class="email">
-            <label>Email address</label>
-            <input type="text" placeholder="email@rookie.com"><br><br>
-        </div>
+            <div class="form-check">
+                <input type="checkbox">
+                <label for="suscribe">Suscribe to the Newsletter</label><br><br><br>
+            </div>
+    </form> 
 
-        <div class="message">
-            <label for="message">Message</label><br>
-            <textarea type="form-control" rows="10" cols="50"></textarea>
-        </div>
+        <button onclick="myFunction()">Submit</button><br><br>
+        <br>
+             <p id="thankYou"></p>
+        <script>
+            function myFunction() {
+            document.getElementById("thankYou").innerHTML = "`Thank You for contacting us +${fname}+!'";        }
+        </script>   
 
-        <div class="form-check">
-            <input type="checkbox">
-            <label for="suscribe">Suscribe to the Newsletter</label><br><br><br>
-        </div>
-</form> 
+   </div>
+   <div class="Footer">
+    <div class="Footer-Border">
+     <a href="https://fr-fr.facebook.com/WildCodeSchool/%22%3E<i class="fab fa-facebook-square"></i></a>
+     <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=de%22%3E<i class="fab fa-instagram"></i></a>
+     <a href="https://www.linkedin.com/school/wild-code-school/?originalSubdomain=de%22%3E<i class="fab fa-linkedin"></i></a>
+    </div>
+     <p id="Impressum">ROOKIE</p>
+     <p id="Inc">Rookie Wilders Inc. 2021 All rights reserved.</p>
+     <p id="Email">info@rookie.com</p>
+   </div>
 
-    <button onclick="myFunction()">Submit</button><br><br>
-    <br>
-         <p id="thankYou"></p>
-    <script>
-        function myFunction() {
-        document.getElementById("thankYou").innerHTML = "`Thank You for contacting us +${fname}+!'";        }
-    </script>   
-
-</div>
-
-<div class="Footer-Border">
-  <a href="https://fr-fr.facebook.com/WildCodeSchool/"><i class="fab fa-facebook-square"></i></a>
-  <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=de"><i class="fab fa-instagram"></i></a>
-  <a href="https://www.linkedin.com/school/wild-code-school/?originalSubdomain=de"><i class="fab fa-linkedin"></i></a>
- </div>
-  <p id="Impressum">ROOKIE</p>
-  <p id="Inc">Rookie Wilders Inc. 2021 All rights reserved.</p>
-  <p id="Email">info@rookie.com</p>
-</div>  
-
-  <script src="index.js"></script>
-  
+   <script src="./index.js"></script>
 </body>
 </html>
