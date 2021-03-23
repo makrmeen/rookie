@@ -8,6 +8,7 @@ body {
   font-family: Bebas Neue;
   font-weight: lighter;
   background: #fff6f4;
+  text-align: center;
 }
 
 /* Nav bar */
@@ -70,6 +71,24 @@ img {
   max-width: 100%;
   padding: 0px 100px 0px 100px;
   height: auto;
+}
+.destination {
+  display: block;
+  text-align: center;
+}
+.img {
+  display: flex;
+  max-width: 80%;
+  padding: 0px 100px 0px 100px;
+  height: 20rem;
+  margin: auto;
+}
+
+#card-container {
+  display: none;
+}
+p {
+  padding: 0 20px;
 }
 
 .break {

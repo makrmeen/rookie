@@ -30,7 +30,7 @@ const sportContent = [
     name: "Tennis",
     picture: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
     intro:
-      "Tennis is a cool sport that I can practice individuallu or in gruops.",
+      "Tennis is a unique sport; it provides both aerobic (endurance) and anaerobic (fast explosive movements) training. The average point in tennis includes bursts of activity and acts to condition our bodies the same way interval training would do.",
   },
   {
     name: "Basketball",
@@ -60,26 +60,32 @@ const sportContent = [
 
 //creation of sport content
 
-const createSport = (event) => {
+const createSport = () => {
   //change page
-  window.location.href = "sports.html";
+  // window.location.href = "sports.html";
 
   //add event click target id
   const x = event.target;
-  const clickedId = x.id;
+  console.log(event);
+  const clickedId = x.classList[0];
   console.log(clickedId);
   //const destination div
   const container = document.querySelector(".destination");
+
+  //scroll to the top
+  window.scrollTo(0, 0);
+
+  //clear everything
+  container.innerHTML = "";
 
   //add image
 
   const sportImg = document.createElement("div");
   sportImg.classList.add("img");
   sportImg.style.backgroundImage = `url("${sportContent[clickedId].picture}")`;
-
   container.appendChild(sportImg);
   //add title
-  const title = document.createElement("h1");
+  const title = document.createElement("h2");
   title.innerText = sportContent[clickedId].name;
   container.appendChild(title);
 
@@ -87,6 +93,14 @@ const createSport = (event) => {
   const sportIntro = document.createElement("p");
   sportIntro.innerHTML = sportContent[clickedId].intro;
   container.appendChild(sportIntro);
+
+  //hide sports icons
+  const firstHidden = document.getElementById("first-hide");
+  firstHidden.style.display = "none";
+
+  const showCards = document.getElementById("card-container");
+  showCards.style.display = "flex";
+  showCards.style.marginTop = "100px";
 };
 
 //Contact page
