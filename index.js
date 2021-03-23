@@ -28,7 +28,7 @@ dropdownButton.addEventListener("click", (show) => {
 const sportContent = [
   {
     name: "Tennis",
-    picture: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
+    picture: "https://i.ibb.co/58qrYjz/pexels-cottonbro-5739226.jpg",
     intro:
       "Tennis is a unique sport; it provides both aerobic (endurance) and anaerobic (fast explosive movements) training. The average point in tennis includes bursts of activity and acts to condition our bodies the same way interval training would do.",
   },
@@ -84,6 +84,7 @@ const createSport = () => {
   sportImg.classList.add("img");
   sportImg.style.backgroundImage = `url("${sportContent[clickedId].picture}")`;
   container.appendChild(sportImg);
+
   //add title
   const title = document.createElement("h2");
   title.innerText = sportContent[clickedId].name;
@@ -97,13 +98,136 @@ const createSport = () => {
   //hide sports icons
   const firstHidden = document.getElementById("first-hide");
   firstHidden.style.display = "none";
+  //show cards icons
+  const showCta = document.getElementById("card-cta");
+  showCta.style.display = "flex";
 
   const showCards = document.getElementById("card-container");
   showCards.style.display = "flex";
-  showCards.style.marginTop = "100px";
+
+  //change cta
+  const changeCta = document.getElementById("card-cta");
+  changeCta.innerText = `Discover more about ${sportContent[clickedId].name}`;
 };
 
-//Contact page
-// function myFunction() {
-//     document.getElementById("thankYou").innerHTML = "Thank You for contacting us fname!" ;
-//   }
+//cardscontent
+const cardsContent = [
+  {
+    name: "Health Benefits",
+    pic1: "https://i.ibb.co/swb8hM0/pexels-luka-s-dlutko-2440324.jpg",
+    title1: "Muscles",
+    topic1:
+      "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    pic2: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
+    title2: "Bones",
+    topic2:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    pic3: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
+  },
+  {
+    name: "Cost of Practicing",
+    pic1: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
+    title1: "Cost of a course",
+    topic1:
+      "With tennis you will train your body entirely. From the upper part and arms, to the legs.",
+    pic2: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
+    title2: "Cost of a trainer",
+    topic2:
+      "With tennis you will train your body entirely. From the upper part and arms, to the legs.",
+    pic3: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
+  },
+  {
+    name: "Level of Difficulty",
+    pic1: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
+    title1: "Muscles",
+    topic1:
+      "With tennis you will train your body entirely. From the upper part and arms, to the legs.",
+    pic2: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
+    title2: "Bones",
+    topic2:
+      "With tennis you will train your body entirely. From the upper part and arms, to the legs.",
+    pic3: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
+  },
+  {
+    name: "Necessary Equipment",
+    pic1: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
+    title1: "Muscles",
+    topic1:
+      "With tennis you will train your body entirely. From the upper part and arms, to the legs.",
+    pic2: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
+    title2: "Bones",
+    topic2:
+      "With tennis you will train your body entirely. From the upper part and arms, to the legs.",
+    pic3: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
+  },
+];
+
+//cards function
+
+const createCards = () => {
+  //change page
+  // window.location.href = "sports.html";
+
+  //add event click target id
+  const x = event.target;
+  console.log(event);
+  const clickedId = x.classList[0];
+  console.log(clickedId);
+  //const destination div
+  const container = document.querySelector(".destination");
+
+  //scroll to the top
+  window.scrollTo(0, 0);
+
+  //clear everything
+  container.innerHTML = "";
+
+  //add image
+
+  const cardImg = document.createElement("div");
+  cardImg.classList.add("img");
+  cardImg.style.backgroundImage = `url("${cardsContent[clickedId].pic1}")`;
+  container.appendChild(cardImg);
+
+  //add page name
+  const name = document.createElement("h2");
+  name.innerText = cardsContent[clickedId].name;
+  name.classList.add("h2special");
+  container.appendChild(name);
+
+  //add title
+  const titleOne = document.createElement("h2");
+  titleOne.innerText = cardsContent[clickedId].title1;
+  container.appendChild(titleOne);
+
+  //add paragraph 1
+  const topicOne = document.createElement("p");
+  topicOne.innerHTML = cardsContent[clickedId].topic1;
+  container.appendChild(topicOne);
+
+  //add image 2
+  const cardImgTwo = document.createElement("div");
+  cardImgTwo.classList.add("img");
+  cardImgTwo.style.backgroundImage = `url("${cardsContent[clickedId].pic2}")`;
+  container.appendChild(cardImgTwo);
+
+  //add title 2
+  const titleTwo = document.createElement("h2");
+  titleTwo.innerText = cardsContent[clickedId].title2;
+  container.appendChild(titleTwo);
+
+  //add paragraph 2
+  const topicTwo = document.createElement("p");
+  topicTwo.innerHTML = cardsContent[clickedId].topic2;
+  container.appendChild(topicTwo);
+
+  //hide cards icons
+  const firstHidden = document.getElementById("first-hide");
+  firstHidden.style.display = "none";
+
+  const showCards = document.getElementById("card-container");
+  showCards.style.display = "flex";
+
+  const changeCta = document.getElementById("card-cta");
+  changeCta.innerText = "Choose another topic";
+};
