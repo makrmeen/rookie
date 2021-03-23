@@ -1,7 +1,5 @@
 # rookie
 
-# rookie
-
 <!--TENIIS-->
 
 <!--1.Health benefits-->
