@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact Us</title>
+</head>
+<body>
+          <nav>
+            <div class = "logo"><h1>Rookie</h1></div>
+
+            <div class = "openMenu"><i class="fas fa-bars"></i></div>
+
+            <ul class = "mainMenu">
+
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+
+            <div class = "closeMenu"><i class = "fa fa-times"></i></div>
+
+            </ul>
+          </nav>
+   
+<script href="index.js"></script>
+
+  <div style="text-align:center;">   
+
+        <h1>Contact Rookie </h1>
+ 
+    <form >
+            <div class="fname">
+                <label>Full Name:</label>
+                <input type="text" placeholder="Babe Ruth"></input>
+            </div>
+
+            <div class="email">
+                <label>Email address</label>
+                <input type="text" placeholder="email@rookie.com"><br><br>
+            </div>
+    
+            <div class="message">
+                <label for="message">Message</label><br>
+                <textarea type="form-control" rows="10" cols="50"></textarea>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox">
+                <label for="suscribe">Suscribe to the Newsletter</label><br><br><br>
+            </div>
+    </form> 
+
+        <button onclick="myFunction()">Submit</button><br><br>
+        <br>
+             <p id="thankYou"></p>
+        <script>
+            function myFunction() {
+            document.getElementById("thankYou").innerHTML = "`Thank You for contacting us +${fname}+!'";        }
+        </script>   
+
+   </div>
+</body>
+</html>
