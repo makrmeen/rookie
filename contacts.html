@@ -13,29 +13,40 @@
     
     <title>Rookie Contact Us</title>
 </head>
-<body>
-          <nav>
-            <div class = "logo"><h1>Rookie</h1></div>
+<header>
+  <nav>
+    <div class = "logo"><h1>Rookie</h1></div>
 
-            <div class = "openMenu"><i class="fas fa-bars"></i></div>
+    <div class = "openMenu"><i class="fas fa-bars"></i></div>
 
-            <ul class = "mainMenu">
+    <ul class = "mainMenu">
 
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="sports.html">Sports</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contacts.html">Contact Us</a></li>
+    <li><a href="index.html">Homepage</a></li>
 
-            <div class = "closeMenu"><i class = "fa fa-times"></i></div>
-
-            </ul>
-          </nav>
-
-   
-<script href="index.js"></script>
-
+    <li><a class = "dropdown-button">Sports</a>
+      <ul class = "dropdown-content">
+        <li><a href = "#">Tennis</a></li>
+        <li><a href = "#">Surf</a></li>
+        <li><a href = "#">Rock climbing</a></li>
+     </li>
+    </ul>
   
-    
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contacts.html">Contact Us</a></li>
+
+    <div class = "closeMenu"><i class = "fas fa-times"></i></div>
+  
+    <span class = "social-media">
+    <i class = "fab fa-facebook"></i>  
+    <i class = "fab fa-instagram"></i>
+    <i class = "fab fa-linkedin"></i>
+  </span>
+</ul>
+  </nav>
+</header>
+
+<body>
+        
 </head>
 <body>
 <h1>Contact Rookie</h1>
@@ -69,12 +80,17 @@
 
 <p id="thankYou"></p>
 
-<script>
-function myFunction() {
-  document.getElementById("thankYou").innerHTML = "Thank You for contacting us fname!" ;
-}
-</script>      
+<div class="Footer-Border">
+  <a href="https://fr-fr.facebook.com/WildCodeSchool/"><i class="fab fa-facebook-square"></i></a>
+  <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=de"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/school/wild-code-school/?originalSubdomain=de"><i class="fab fa-linkedin"></i></a>
+ </div>
+  <p id="Impressum">ROOKIE</p>
+  <p id="Inc">Rookie Wilders Inc. 2021 All rights reserved.</p>
+  <p id="Email">info@rookie.com</p>
+</div>  
 
-
+  <script src="index.js"></script>
+  
 </body>
 </html>
