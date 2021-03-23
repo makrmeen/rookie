@@ -189,9 +189,49 @@ h5 a {
 	font-size: 35px;
 }
 
+.quote {
+	font-family: Montserrat;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 hr.solid {
 	border-top: 1px solid black;
 	margin: 0px 150px 0px 150px;
+}
+
+.cards-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0px 100px;
+	margin: 50px 0px 50px;
+}
+
+#health-benefits,
+#gears,
+#rules,
+#FAQ {
+	width: 130px;
+	height: 130px;
+	background-color: #171738;
+}
+#health-benefits > div {
+	margin: 15px;
+}
+
+#gears > div {
+	margin: 15px;
+}
+
+#rules > div {
+	margin: 15px;
+}
+
+#FAQ > div {
+	margin: 15px;
 }
 
 /* Footer */
@@ -398,6 +438,21 @@ a i {
 	}
 
 	hr.solid {
-		margin: 0px 70px 0px 70px;
+		margin: 0px 40px 0px 40px;
+	}
+	.quote {
+		font-size: 11px;
+	}
+
+	.cards-container {
+		flex-wrap: wrap;
+	}
+
+	#health-benefits,
+	#gears,
+	#rules,
+	#FAQ {
+		width: 100px;
+		height: 100px;
 	}
 }
