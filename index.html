@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    
     <script src = "https://kit.fontawesome.com/8187b285e6.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -51,15 +50,20 @@
  
           <div class ="break"></div>
 
-<!-- change image? -->
- <img src="assets/Tennis-field2.jpg"/>
+        <div class="closeMenu"><i class="fas fa-times"></i></div>
 
- <p id = "teaser">Your beginners guide to  your new sport activity. Select one sport and discover how to start practicing it.</p>
-   
+        <span class="social-media">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </span>
+      </ul>
+    </nav>
 
-<div class = "break"></div>
+    <div class="break"></div>
 
-<h2>Pick your sport</h2>
+    <!-- change image? -->
+    <img src="assets/Tennis-field2.jpg" />
 
 <!-- SPORTS ICON STARTS HERE -->
 <div class = "container">
@@ -92,27 +96,40 @@
 <div onclick="createSport(event)">
               <h1 id="rookie">Rookie<h1>
 
-              <div class="destination">
-              </div>
+    <div class="break"></div>
 
-              <div class="container">
-                <div class="sports">
-                  <h3 id="0">Tennis</h3>
-                </div>
-                <div class="sports">
-                  <h3 id="1">Basketball</h3>
-                </div>
-                <div class="sports">
-                  <h3 id="2"><a href="sport.html">Surf</a></h3>
-                </div>
-                <div class="sports">
-                  <h3 id="3">Climbing</h3>
-                </div>
-                <div class="sports">
-                  <h3 id="4">Soccer</h3>
-                </div>
-</div>
-            <script src="script.js"></script>
-</body>
+    <h2>Pick your sport</h2>
 
+    <div class="container">
+      <div class="sport-icon" id="tennis">
+        <h5 class="tennis-subheading">Tennis</h5>
+      </div>
+      <div class="sport-icon" id="surf">
+        <h5 class="surf-subheading">Surf</h5>
+      </div>
+      <div class="sport-icon" id="climbing">
+        <h5 class="climbing-subheading">Rock Climbing</h5>
+      </div>
+      <!-- <div class = "sport-icon">
+  </div> -->
+    </div>
+    <div class="Footer">
+      <div class="Footer-Border">
+        <a href="https://fr-fr.facebook.com/WildCodeSchool/"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=de"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/school/wild-code-school/?originalSubdomain=de"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+      <p id="Impressum">ROOKIE</p>
+      <p id="Inc">Rookie Wilders Inc. 2021 All rights reserved.</p>
+      <p id="Email">info@rookie.com</p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
 </html>
