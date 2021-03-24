@@ -55,7 +55,7 @@
     <form id=formid >
             <div class="fname">
                 <label>Full Name: </label>
-                <input type="text" placeholder="Babe Ruth"></input>
+                <input type="text" class="nameInput" placeholder="Babe Ruth"></input>
             </div>
 
             <div class="email">
@@ -79,8 +79,10 @@
         <br> <p id="thankYou"></p>
      
         <script>
+          const fname= document.querySelector(".fname")
+
             function subMess() {
-            document.getElementById("thankYou").innerHTML = "Thank You for contacting us +${fname}+!";        }
+            document.getElementById("thankYou").innerHTML = 'Thank You for contacting us {.fname}!';        }
         </script>  
 
    <div class="Footer">
