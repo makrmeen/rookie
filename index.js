@@ -71,6 +71,7 @@ const createSport = () => {
   console.log(event);
   const clickedId = x.classList[0];
   console.log(clickedId);
+  //store sport selected
   selectedSport = clickedId;
   //const destination div
   const container = document.querySelector(".destination");
@@ -111,6 +112,12 @@ const createSport = () => {
   //change cta
   const changeCta = document.getElementById("card-cta");
   changeCta.innerText = `Discover more about ${sportContent[clickedId].name}`;
+
+  //or choose another sport
+  const backSportCta = document.querySelector(".cta");
+  backSportCta.style.display = "inline-block";
+  backSportCta.style.marginBottom = "5rem";
+  backSportCta.innerText = "Or explore another sport!";
 };
 
 //cardscontent
@@ -119,13 +126,13 @@ const cardsContent = [
     {
       name: "Health Benefits",
       pic1: "https://i.ibb.co/swb8hM0/pexels-luka-s-dlutko-2440324.jpg",
-      title1: "Strong legs, deep breath",
+      title1: "One of the most complete sport",
       topic1:
-        "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "Tennis is a unique sport; it provides both aerobic (endurance) and anaerobic (fast explosive movements) training. The average point in tennis includes bursts of activity and acts to condition our bodies the same way interval training would do. This has a profoundly positive effect on our heart and lungs with studies showing that playing just 3 hours a week reduces the risk of heart disease by over 50%. Furthermore, playing tennis can reduce the rate of decline of our fitness as we get older. ",
       pic2: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
-      title2: "Pay attention to your shoulder",
+      title2: "Tennis players live longer",
       topic2:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "In a study looking at 8 different sports it was identified that tennis players had the longest life expectancy, by about 10 years! Tennis is a sport for all ages, genders, sizes and expertise levels, with benefits including maintaining healthy body composition, bone health, muscle strength and balance.",
     },
     {
       name: "Cost of Practicing",
@@ -277,6 +284,13 @@ const createCards = () => {
   const changeCta = document.getElementById("card-cta");
   changeCta.innerText = "Choose another topic";
 
-  const backSportCta = document.getElementById("back-sport-cta");
+  const backSportCta = document.querySelector(".cta");
+  backSportCta.style.display = "inline-block";
+  backSportCta.style.marginBottom = "5rem";
   backSportCta.innerText = "Or explore another sport!";
+};
+
+const backHome = () => {
+  window.location = "index.html";
+  window.scrollTo(0, 4000);
 };
