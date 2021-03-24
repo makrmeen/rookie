@@ -495,11 +495,10 @@ a i {
 
 	
 #formid {
-	width: 80%:;
-	display: flex
+	width: 600px;
 	flex-direction: column;
+	display: auto;	
 }
-
 
 #subutton {
 	box-shadow: 0px 0px 0px 1px #9fb4f2;
