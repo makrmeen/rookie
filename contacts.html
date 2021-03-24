@@ -50,7 +50,7 @@
 
   <div class=formclass >   
 
-        <h1>Contact Rookie</h1>
+        <h1 class=contact-title>Contact Rookie</h1>
   
         <form id=formid >
                   <label>Full Name: </label>
@@ -61,12 +61,12 @@
       
                   <label for="message">Message</label>
                   <textarea type="form-control" rows="10" cols="50"></textarea>  
-        
+
        </form> 
 
-            <input type="checkbox"> <label for="suscribe">Suscribe to the Newsletter</label><br>
+            <input type="checkbox" class="form-check" > <label for="suscribe">Suscribe to the Newsletter</label><br>
             <button id=subutton onclick="subMess()">Submit</button> 
-            <br> <p id="thankYou"></p>
+            <br> <p id="thankYou"></p> <br>
             <script>
               const fname= document.querySelector(".nameInput")
               function subMess() {
