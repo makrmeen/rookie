@@ -8,11 +8,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/472ac0f0b6.js" crossorigin="anonymous"></script>
     <title>Rookie</title>
 </head>
+
 <!-- MENU STARTS HERE -->
 <header>
   <nav>
@@ -46,6 +45,7 @@
   </nav>
 </header>
 <!-- MENU ENDS HERE -->
+
 <body>
 
     <div class="break"></div>
@@ -60,7 +60,7 @@
     <div class="break"></div>
 
     <h2>Pick your sport</h2>
-    
+
 <!-- SPORTS ICON STARTS HERE -->
 <div class = "container" id="sport-container" onclick= "createSport()">
   <div class = "0 sport-icon">
@@ -99,7 +99,8 @@
     <h5 class = "subheading">Necessary Equipment</h5>
   </div>
 </div>
-<h2 id="back-sport-cta" onclick= "createSport()"></h2>
+
+<!-- SPORTS ICON ENDS HERE -->
 
 <!-- FOOTER -->
 <div class="Footer">
@@ -112,6 +113,9 @@
      <p id="Inc">Rookie Wilders Inc. 2021 All rights reserved.</p>
      <p id="Email">info@rookie.com</p>
    </div>  
-<script src="index.js"></script>
-  </body>
+<script src="./index.js"></script>
+
+<!-- What should we do about this onclick over here? -->
+<div onclick="createSport(event)">
+             
 </html>
