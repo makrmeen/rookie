@@ -1,79 +1,115 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: Bebas Neue;
-	font-weight: lighter;
-	background: #fff6f4;
+  font-family: Bebas Neue;
+  font-weight: lighter;
+  background: #fff6f4;
+  text-align: center;
 }
 
 /* Nav bar */
 nav {
-	background: #fff6f4;
-	display: flex;
-	justify-content: space-between;
+  background: #fff6f4;
+  display: flex;
+  justify-content: space-between;
 }
 nav .mainMenu {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
 }
 
 nav .mainMenu li a {
-	display: inline-block;
-	padding: 25px;
-	text-decoration: none;
-	color: #171738;
-	font-size: 18px;
-	margin-right: 10px;
+  display: inline-block;
+  padding: 25px;
+  text-decoration: none;
+  color: #171738;
+  font-size: 18px;
+  margin-right: 10px;
 }
 
 /* change color? */
 nav .mainMenu li a:hover {
-	color: #8383dc93;
+  color: #8383dc93;
 }
 
 nav .openMenu {
-	margin: 10px;
-	display: none;
-	cursor: pointer;
+  margin: 10px;
+  display: none;
+  cursor: pointer;
 }
 
 nav .mainMenu .closeMenu,
 .social-media {
-	font-size: 2rem;
-	display: none;
-	cursor: pointer;
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 nav .logo {
-	padding: 10px;
-	margin: 6px;
-	font-size: 30px;
-	font-weight: lighter;
-	cursor: pointer;
-	color: #171738;
-	margin-left: 20px;
+  padding: 10px;
+  margin: 6px;
+  font-size: 30px;
+  font-weight: lighter;
+  cursor: pointer;
+  color: #171738;
+  margin-left: 20px;
 }
 
 /* First img */
 
 img {
-	display: flex;
-	max-width: 100%;
-	padding: 0px 100px 0px 100px;
-	height: auto;
+  display: flex;
+  max-width: 100%;
+  padding: 0px 100px 0px 100px;
+  height: auto;
+}
+.destination {
+  display: block;
+  text-align: center;
+}
+.img {
+  display: flex;
+  max-width: 100%;
+  height: 20rem;
+  margin: auto;
+}
+
+#card-container {
+  display: none;
+}
+#card-cta {
+  display: none;
+}
+
+#back-sport-cta {
+  display: none;
+}
+
+.h2special {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #171738;
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+p {
+  padding: 0 10% 10% 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .break {
-	height: 30px;
+  height: 30px;
 }
 
 /* .dropdown-menu {
@@ -83,110 +119,110 @@ img {
 
 /* DROPDOWN MENU */
 .dropdown-button {
-	color: #171738;
-	cursor: pointer;
+  color: #171738;
+  cursor: pointer;
 }
 
 /* Here just to signal that there are li elements are inside the SPORTS ul */
 .dropdown-button:hover,
 .dropdown-button:focus {
-	background-color: #ff937a;
+  background-color: #ff937a;
 }
 
 .dropdown-content {
-	display: none;
-	position: absolute;
-	color: #171738;
-	background: #fff6f4;
-	min-width: 160px;
-	padding: 12px 16px;
-	z-index: 1;
+  display: none;
+  position: absolute;
+  color: #171738;
+  background: #fff6f4;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 1;
 }
 
 .dropdown-content a {
-	padding: 12px 16px;
-	text-decoration: none;
-	display: inline-block;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .show {
-	display: block;
+  display: block;
 }
 
 .dropdown-closing-button {
-	display: none;
+  display: none;
 }
 
 #teaser {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: Montserrat;
-	background: #171738;
-	color: #fff6f4;
-	font-size: 16px;
-	font-weight: bold;
-	text-justify: inter-cluster;
-	height: 40px;
-	padding: 50px;
-	margin-left: 100px;
-	margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  background: #171738;
+  color: #fff6f4;
+  font-size: 16px;
+  font-weight: bold;
+  text-justify: inter-cluster;
+  height: 40px;
+  padding: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 i {
-	display: none;
+  display: none;
 }
 h2 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #171738;
-	font-size: 30px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #171738;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .container {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-wrap: wrap;
-	margin: 0px 100px;
-	padding-bottom: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px 100px;
+  padding-bottom: 100px;
 }
 .sport-icon {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	background: #171738;
-	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-	margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #171738;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
 }
 
 h5 a {
-	font-weight: lighter;
-	font-size: 21px;
-	text-decoration: none;
-	color: #171738;
+  font-weight: lighter;
+  font-size: 21px;
+  text-decoration: none;
+  color: #171738;
 }
 .subheading {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 150px;
 }
 
 .tennis,
 .surf,
 .climbing {
-	display: flex;
-	justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Sports page style */
 .content-heading {
-	font-weight: lighter;
-	font-size: 35px;
+  font-weight: lighter;
+  font-size: 35px;
 }
 
 .quote {
@@ -198,8 +234,8 @@ h5 a {
 }
 
 hr.solid {
-	border-top: 1px solid black;
-	margin: 0px 150px 0px 150px;
+  border-top: 1px solid black;
+  margin: 0px 150px 0px 150px;
 }
 
 .cards-container {
@@ -236,68 +272,68 @@ hr.solid {
 
 /* Footer */
 .Footer {
-	position: inherit;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: auto;
-	background-color: #fff6f4;
-	text-align: center;
+  position: inherit;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #fff6f4;
+  text-align: center;
 }
 
 a i {
-	font-size: 30px;
-	padding: 10px;
-	color: #171738;
+  font-size: 30px;
+  padding: 10px;
+  color: #171738;
 }
 
 .Footer-Border {
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
-	padding-top: 20px;
-	padding-bottom: 20px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #Impressum {
-	font-size: 15px;
-	font-weight: bold;
-	padding-top: 20px;
-	padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 #Inc {
-	margin-bottom: 0;
-	font-size: 12px;
+  margin-bottom: 0;
+  font-size: 12px;
 }
 #Email {
-	margin-top: 0;
-	margin-bottom: 20px;
-	font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
 }
 
 /* About Us */
 
 .Teammate {
-	border-radius: 50%;
-	max-width: 150px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-	margin-bottom: 0px;
-	display: flex;
+  border-radius: 50%;
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  display: flex;
 }
 
 .Name {
-	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 10px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .Description {
-	font-size: 10px;
-	margin-left: 150px;
-	margin-right: 150px;
-	margin-bottom: 60px;
+  font-size: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 60px;
 }
 
 /* for mobile version */
@@ -472,3 +508,26 @@ form {
     flex-direction: column;
 }
 
+
+/* Contact US */
+
+.Contact-Form {
+	display: auto;
+	color:  #171738;
+}
+
+.contact-title {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.Submit {
+	background-color:#171738;
+	color: white;
+	font-size: 1em;
+}
+
+
+.form-check {
+	margin-top: 10px;
+}
