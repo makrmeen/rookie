@@ -278,3 +278,4 @@ const createCards = () => {
   const backSportCta = document.getElementById("back-sport-cta");
   backSportCta.innerText = "Or explore another sport!";
 };
+
