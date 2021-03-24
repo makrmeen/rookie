@@ -11,19 +11,41 @@ closeMenu.addEventListener("click", (close) => {
   mainMenu.style.top = "-100%";
 });
 
-//dropdown menu (Sports)
-const dropdown = document.querySelector(".dropdown-content");
-const dropdownButton = document.querySelector(".dropdown-button");
-const closeDropdown = document.querySelector(".dropdown-closing-button");
+//dropdown menu desktop (Sports)
+const dropdown = document.querySelector('.dropdown-content');
+const dropdownButton = document.querySelector('.dropdown-button');
 
-dropdownButton.addEventListener("click", (show) => {
+dropdownButton.addEventListener ("click", (show) => {
   if (dropdown.style.display === "block") {
-    dropdown.style.display = "none";
-  } else {
-    dropdown.style.display = "block";
-  }
-});
+   dropdown.style.display = "none";
+} 
+  else {
+   dropdown.style.display = "block";
+      }
+  })
 
+  let count = 0; 
+dropdownButton.addEventListener('click', event => { 
+  const sportsArray = ["Tennis", "Surf", "Climbing"];
+  if (count <= 0) {
+    for(let i=0; i < sportsArray.length; i++) {
+      const li = document.createElement("li");
+      const text = document.createTextNode(sportsArray[i]);
+      li.classList.add(`${i}`); 
+      li.appendChild(text); 
+      dropdown.appendChild(li);
+    }
+    const sportsOptions = dropdown.children; 
+    for (let j = 0; j <sportsOptions.length; j++) {
+      sportsOptions[j].addEventListener('click', () => {
+        mainMenu.style.top = "-100%";
+      })
+    }
+  }
+
+    count = count +1; 
+})
+  
 //sport content
 
 let selectedSport = 0;
