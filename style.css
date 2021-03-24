@@ -492,3 +492,27 @@ a i {
 		height: 100px;
 	}
 }
+
+
+/* Contact US */
+
+.Contact-Form {
+	display: auto;
+	color:  #171738;
+}
+
+.contact-title {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.Submit {
+	background-color:#171738;
+	color: white;
+	font-size: 1em;
+}
+
+
+.form-check {
+	margin-top: 10px;
+}

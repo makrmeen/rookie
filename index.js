@@ -60,11 +60,9 @@ const sportContent = [
   },
 ];
 
-//creation of sport content
+//creation of sport content -- when clicking sport icon
 
 const createSport = () => {
-  //change page
-  // window.location.href = "sports.html";
 
   //add event click target id
   const x = event.target;
@@ -75,7 +73,7 @@ const createSport = () => {
   //const destination div
   const container = document.querySelector(".destination");
 
-  //scroll to the top
+  //scroll to the top - user will start at top of page
   window.scrollTo(0, 0);
 
   //clear everything
