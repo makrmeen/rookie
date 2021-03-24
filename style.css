@@ -493,11 +493,13 @@ a i {
 
 /* Contact Us */
 
-form {
-
-   display: flex;
-flex-direction: column;
+	
+#formid {
+	width: 80%:;
+	display: flex
+	flex-direction: column;
 }
+
 
 #subutton {
 	box-shadow: 0px 0px 0px 1px #9fb4f2;
