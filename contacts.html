@@ -48,42 +48,34 @@
 <body>
 
 
-  <div style="text-align:center;">   
+  <div class=fo >   
 
-        <h1>Contact Rookie </h1>
+        <h1>Contact Rookie</h1>
  
     <form id=formid >
-            <div class="fname">
                 <label>Full Name: </label>
                 <input type="text" class="nameInput" placeholder="Babe Ruth"></input>
-            </div>
-
-            <div class="email">
+          
                 <label>Email address: </label>
-                <input type="text" placeholder="email@rookie.com"><br><br>
-            </div>
-    
-            <div class="message">
-                <label for="message">Message</label><br>
-                <textarea type="form-control" rows="10" cols="50"></textarea>
-            </div>
-
-            <div class="form-check">
-              <input type="checkbox">
-              <label for="suscribe">Suscribe to the Newsletter</label><br><br><br>
-             </div>
-    
-    </form> 
-        
-       <button onclick="subMess()">Submit</button><br><br>
-        <br> <p id="thankYou"></p>
+                <input type="text" placeholder="email@rookie.com">
      
-        <script>
-          const fname= document.querySelector(".fname")
+                <label for="message">Message</label>
+                <textarea type="form-control" rows="10" cols="50"></textarea>  
+       
+    </form> 
 
-            function subMess() {
-            document.getElementById("thankYou").innerHTML = 'Thank You for contacting us {.fname}!';        }
-        </script>  
+            <input type="checkbox"> <label for="suscribe">Suscribe to the Newsletter</label><br>
+            <button id=subutton onclick="subMess()">Submit</button> 
+            <br> <p id="thankYou"></p>
+            <script>
+              const fname= document.querySelector(".nameInput")
+              function subMess() {
+                console.log(fname.value)
+              document.getElementById("thankYou").innerHTML = `Thank You for contacting us ${fname.value}!`;        }
+              </script>  
+
+   </div>  
+
 
    <div class="Footer">
     <div class="Footer-Border">
