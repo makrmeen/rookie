@@ -99,3 +99,4 @@ const createSport = (event) => {
   sportIntro.innerHTML = sportContent[clickedId].intro;
   container.appendChild(sportIntro);
 };
+

@@ -48,21 +48,21 @@
 <body>
 
 
-  <div class=fo >   
+  <div class=formclass >   
 
         <h1>Contact Rookie</h1>
- 
-    <form id=formid >
-                <label>Full Name: </label>
-                <input type="text" class="nameInput" placeholder="Babe Ruth"></input>
-          
-                <label>Email address: </label>
-                <input type="text" placeholder="email@rookie.com">
-     
-                <label for="message">Message</label>
-                <textarea type="form-control" rows="10" cols="50"></textarea>  
-       
-    </form> 
+  
+        <form id=formid >
+                  <label>Full Name: </label>
+                  <input type="text" class="nameInput" placeholder="Babe Ruth"></input>
+            
+                  <label>Email address: </label>
+                  <input type="text" placeholder="email@rookie.com">
+      
+                  <label for="message">Message</label>
+                  <textarea type="form-control" rows="10" cols="50"></textarea>  
+        
+       </form> 
 
             <input type="checkbox"> <label for="suscribe">Suscribe to the Newsletter</label><br>
             <button id=subutton onclick="subMess()">Submit</button> 
@@ -73,7 +73,6 @@
                 console.log(fname.value)
               document.getElementById("thankYou").innerHTML = `Thank You for contacting us ${fname.value}!`;        }
               </script>  
-
    </div>  
 
 
