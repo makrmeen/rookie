@@ -14,18 +14,25 @@ closeMenu.addEventListener("click", (close) => {
 //dropdown menu desktop (Sports)
 const dropdown = document.querySelector('.dropdown-content');
 const dropdownButton = document.querySelector('.dropdown-button');
-const closeDropdown = document.querySelector('.dropdown-closing-button');
 
-dropdownButton.addEventListener ('click', (show) => {
-  if (dropdown.style.display === 'block') {
-   dropdown.style.display = 'none';
+dropdownButton.addEventListener ("click", (show) => {
+  if (dropdown.style.display === "block") {
+   dropdown.style.display = "none";
 } 
   else {
-   dropdown.style.display = 'block';
+   dropdown.style.display = "block";
       }
   })
 
 
+dropdownButton.addEventListener('click', (hide) => {
+  const onlyDropContent = document.getElementsByClassName("dropdown-content");
+  mainMenu.innerHTML = "";
+  onlyDropContent.appendChild(generateListFromArray(array));
+  for(let i=0; dropdown.length; i++) {
+    return dropdown[i];  
+  }
+})
 
 
 const sportContent = [
