@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src = "https://kit.fontawesome.com/8187b285e6.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
@@ -8,25 +8,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/472ac0f0b6.js" crossorigin="anonymous"></script>
-    <title>Rookie</title>
+    <title>Contact Us</title>
 </head>
-<body>
-<!--Menu-->
+
+
+<header>
   <nav>
     <div class = "logo"><h1>Rookie</h1></div>
-      <div class = "openMenu"><i class="fas fa-bars"></i></div>
-      <ul class = "mainMenu">
-      <li><a href="index.html">Homepage</a></li>
-      <li><a href="sports.html">Sports</a></li>
-     <li><a href="about.html">About Us</a></li>
-     <li><a href="contacts.html">Contact Us</a></li>
-    <div class = "closeMenu"><i class = "fa fa-times"></i></div>
-     </ul>
+
+    <div class = "openMenu"><i class="fas fa-bars"></i></div>
+
+    <ul class = "mainMenu">
+
+    <li><a href="index.html">Homepage</a></li>
+
+    <li><a class = "dropdown-button">Sports</a>
+      <ul class = "dropdown-content">
+        <li><a href = "tennis.html">Tennis</a></li>
+        <li><a href = "#">Surf</a></li>
+        <li><a href = "#">Rock climbing</a></li>
+     </li>
+    </ul >
+
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contacts.html">Contact Us</a></li>
+
+    <div class = "closeMenu"><i class = "fas fa-times"></i></div>
+
+    <span class = "social-media">
+    <i class = "fab fa-facebook"></i>
+    <i class = "fab fa-instagram"></i>
+    <i class = "fab fa-linkedin"></i>
+  </span>
+</ul>
   </nav>
-   
-<script href="index.js"></script>
+</header>
+
+<body>
+
+
   <div style="text-align:center;">   
     <h2 class="contact-title">Get in touch with us </h1>
  
@@ -63,8 +84,8 @@
     function myFunction() {
     document.getElementById("thankYou").innerHTML = "`Thank You for contacting us +${fname}+!'";        }
     </script>   
-
    </div>
+   
    <div class="Footer">
     <div class="Footer-Border">
      <a href="https://fr-fr.facebook.com/WildCodeSchool/"><i class="fab fa-facebook-square"></i></a>
@@ -76,7 +97,6 @@
      <p id="Email">info@rookie.com</p>
    </div>  
 
-
-
+   <script src="./index.js"></script>
 </body>
 </html>
