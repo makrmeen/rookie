@@ -90,6 +90,10 @@ img {
   display: none;
 }
 
+#back-sport-cta {
+  display: none;
+}
+
 .h2special {
   display: flex;
   justify-content: center;
