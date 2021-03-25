@@ -101,6 +101,7 @@ nav .logo {
   height: 30px;
 }
 
+
 /* DROPDOWN MENU */
 .dropdown-button {
   color: #171738;
@@ -315,6 +316,7 @@ a i {
 
 /* for mobile version */
 @media (max-width: 765px) {
+  
   /* Main menu */
   nav .logo {
     display: inline;
@@ -496,6 +498,17 @@ a i {
     margin: auto;
   }
 }
+
+/* ------------MEDIA ENDS HERE --------------*/
+
+.img {
+	display: auto;
+	height: 300px;
+	width: 100%;
+	margin-top: 50px; 
+
+}
+
 
 /* Contact Us */
 
