@@ -34,7 +34,7 @@ dropdownButton.addEventListener('click', event => {
       li.classList.add(`${i}`); 
       li.appendChild(text); 
       dropdown.appendChild(li);
-    }
+    } 
     const sportsOptions = dropdown.children; 
     for (let j = 0; j <sportsOptions.length; j++) {
       sportsOptions[j].addEventListener('click', () => {
@@ -42,7 +42,9 @@ dropdownButton.addEventListener('click', event => {
       })
     }
   }
-  
+  count = count +1; 
+})
+
   
 // HOMEPAGE
 
@@ -196,4 +198,3 @@ const backHome = () => {
   window.location = "index.html";
   window.scrollTo(0, 4000);
 };
-
