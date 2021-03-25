@@ -66,12 +66,12 @@ nav .logo {
 
 /* First img */
 
-/* img {
-	display: flex;
-	max-width: 79%;
-	padding: 0px 100px 0px 100px;
-	height: auto;
-} */
+.main-img {
+  max-width: 79%;
+  max-height: 80%;
+  display: inline;
+}
+
 .destination {
   display: block;
   text-align: center;
@@ -188,16 +188,15 @@ h2 {
   margin: 0px 80px;
   padding-bottom: 120px;
 }
-/* .sport-icon {
-	display: inline;
-	justify-content: space-evenly;
-	align-items: center;
-	background: #171738;
-	border-radius: 50%;
-	width: 130px;
-	height: 130px;
-	margin: auto;
-} */
+.sport-icon {
+  display: inline-block;
+  max-width: 10%;
+}
+img {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
 
 h5 a {
   font-weight: lighter;
