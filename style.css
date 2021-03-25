@@ -514,9 +514,15 @@ a i {
 /* Contact Us */
 
 #formid {
+<<<<<<< HEAD
   width: 600px;
   flex-direction: column;
   margin: auto;
+=======
+	width: 600px;
+	flex-direction: column;
+	margin: auto;
+>>>>>>> 6a3c7d9a9e40a296a59ad560d775b26bb3018d76
 }
 
 #subutton {
