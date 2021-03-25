@@ -105,6 +105,7 @@ p {
 	height: 30px;
 }
 
+
 /* DROPDOWN MENU */
 .dropdown-button {
 	color: #171738;
@@ -496,8 +497,25 @@ a i {
 	#FAQ {
 		width: 100px;
 		height: 100px;
+		
+	}
+
+	.img {
+		height: 400px;
+		width: 60%;
 	}
 }
+
+/* ------------MEDIA ENDS HERE --------------*/
+
+.img {
+	display: auto;
+	height: 300px;
+	width: 100%;
+	margin-top: 50px; 
+
+}
+
 
 /* Contact Us */
 
