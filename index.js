@@ -71,6 +71,12 @@ const createSport = () => {
   container.innerHTML = "";
 
   //BEGINNING OF CONTENT CREATION
+  //add blu box
+  const bluBox = document.createElement("p");
+  bluBox.classList.add("teaser");
+  bluBox.innerText = sportContent[clickedId].emoji;
+  container.appendChild(bluBox);
+
   //add image
   const sportImg = document.createElement("div");
   sportImg.classList.add("img");
