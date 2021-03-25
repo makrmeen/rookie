@@ -66,23 +66,16 @@ nav .logo {
 
 /* First img */
 
-img {
+/* img {
 	display: flex;
-	max-width: 100%;
+	max-width: 79%;
 	padding: 0px 100px 0px 100px;
 	height: auto;
-}
+} */
 .destination {
 	display: block;
 	text-align: center;
 }
-.img {
-	display: flex;
-	max-width: 100%;
-	height: 20rem;
-	margin: auto;
-}
-
 #card-container {
 	display: none;
 }
@@ -104,8 +97,8 @@ img {
 	padding-bottom: 50px;
 }
 p {
-	padding: 0 10% 10% 10%;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding: 8px;
+	font-family: Montserrat;
 }
 
 .break {
@@ -180,23 +173,23 @@ h2 {
 	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: wrap;
-	margin: 0px 100px;
-	padding-bottom: 100px;
+	margin: 0px 80px;
+	padding-bottom: 120px;
 }
-.sport-icon {
-	display: flex;
+/* .sport-icon {
+	display: inline;
 	justify-content: space-evenly;
 	align-items: center;
 	background: #171738;
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
+	width: 130px;
+	height: 130px;
 	margin: auto;
-}
+} */
 
 h5 a {
 	font-weight: lighter;
-	font-size: 21px;
+	font-size: 30px;
 	text-decoration: none;
 	color: #171738;
 }
@@ -204,14 +197,18 @@ h5 a {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	margin-top: 150px;
+	margin-top: 25px;
+	font-size: 21px;
+	font-weight: lighter;
+}
+.container-img {
+	display: flex;
+	max-width: 20px;
 }
 
-.tennis,
-.surf,
-.climbing {
-	display: flex;
-	justify-content: space-evenly;
+.main-img {
+	max-width: 30%;
+	max-height: 30%;
 }
 
 /* Sports page style */
@@ -379,10 +376,10 @@ a i {
 		position: relative;
 		background-color: #171738;
 		color: #fff6f4;
-		font-size: 20px;
+		font-size: 25px;
 	}
 	#teaser {
-		font-size: 10px;
+		font-size: 14px;
 		margin: 0px;
 	}
 
@@ -415,24 +412,35 @@ a i {
 	.container {
 		flex-direction: column;
 		justify-content: space-between;
+		margin: 0px 80px;
+		padding-bottom: 75px;
 	}
 	h2 {
-		font-size: 28px;
+		font-size: 30px;
 		margin-bottom: -30px;
 	}
 	.sport-icon {
 		border-radius: 50%;
-		width: 60px;
-		height: 60px;
+		width: 120px;
+		height: 120px;
 		margin: 25px;
+		display: inline;
+	}
+	img {
+		max-width: 100%;
 	}
 	h5 {
 		font-size: 15px;
 		text-decoration: none;
 	}
 	.subheading {
-		margin-top: 95px;
+		margin-top: 13px;
 		white-space: nowrap;
+		font-size: 21px;
+		font-weight: lighter;
+	}
+	.fa-linkedin {
+		margin: 0px;
 	}
 
 	/* Footer style */
@@ -463,7 +471,7 @@ a i {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 15px;
+		font-size: 18px;
 	}
 
 	/* Sports page style */
@@ -493,7 +501,7 @@ a i {
 
 /* Contact Us */
 
-	
+
 #formid {
 	width: 600px;
 	flex-direction: column;
@@ -502,10 +510,10 @@ a i {
 
 #subutton {
 	box-shadow: 0px 0px 0px 1px #9fb4f2;
-	color:#ffffff;
-	font-size:16px;
-	background-color:#171738;
-	border-radius:8px;
-	cursor:pointer;
-	padding:5px 10px;
+	color: #ffffff;
+	font-size: 16px;
+	background-color: #171738;
+	border-radius: 8px;
+	cursor: pointer;
+	padding: 5px 10px;
 }
