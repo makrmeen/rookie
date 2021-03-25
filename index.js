@@ -26,7 +26,7 @@ dropdownButton.addEventListener("click", (show) => {
 
   let count = 0; 
 dropdownButton.addEventListener('click', event => { 
-  const sportsArray = ["Tennis", "Swimming", "Rock Climbing", "Running"];
+  const sportsArray = ["Tennis", "Swimming", "Climbing", "Running"];
   if (count <= 0) {
     for (let i = 0; i < sportsArray.length; i++) {
       const li = document.createElement("li");
