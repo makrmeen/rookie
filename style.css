@@ -514,9 +514,9 @@ a i {
 /* Contact Us */
 
 #formid {
-  width: 600px;
-  flex-direction: column;
-  display: auto;
+	width: 600px;
+	flex-direction: column;
+	margin: auto;
 }
 
 #subutton {
