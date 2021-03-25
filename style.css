@@ -292,25 +292,24 @@ a i {
 
 .Teammate {
   border-radius: 50%;
-  max-width: 150px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 300px;
   margin-top: 50px;
   margin-bottom: 0px;
-  display: flex;
+  display: center;
 }
 
 .Name {
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  font-size: 30px;
 }
 
 .Description {
-  font-size: 10px;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-bottom: 60px;
+  font-size: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 100px;
   text-align: justify;
 }
 
