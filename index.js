@@ -12,44 +12,41 @@ closeMenu.addEventListener("click", (close) => {
 });
 
 //dropdown menu desktop (Sports)
-const dropdown = document.querySelector('.dropdown-content');
-const dropdownButton = document.querySelector('.dropdown-button');
+const dropdown = document.querySelector(".dropdown-content");
+const dropdownButton = document.querySelector(".dropdown-button");
 
-dropdownButton.addEventListener ("click", (show) => {
+dropdownButton.addEventListener("click", (show) => {
   if (dropdown.style.display === "block") {
-   dropdown.style.display = "none";
-} 
-  else {
-   dropdown.style.display = "block";
-      }
-  })
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+});
 
-  let count = 0; 
-dropdownButton.addEventListener('click', event => { 
+let count = 0;
+dropdownButton.addEventListener("click", (event) => {
   const sportsArray = ["Tennis", "Surf", "Climbing"];
   if (count <= 0) {
-    for(let i=0; i < sportsArray.length; i++) {
+    for (let i = 0; i < sportsArray.length; i++) {
       const li = document.createElement("li");
       const text = document.createTextNode(sportsArray[i]);
-      li.classList.add(`${i}`); 
-      li.appendChild(text); 
+      li.classList.add(`${i}`);
+      li.appendChild(text);
       dropdown.appendChild(li);
-    } 
-    const sportsOptions = dropdown.children; 
-    for (let j = 0; j <sportsOptions.length; j++) {
-      sportsOptions[j].addEventListener('click', () => {
+    }
+    const sportsOptions = dropdown.children;
+    for (let j = 0; j < sportsOptions.length; j++) {
+      sportsOptions[j].addEventListener("click", () => {
         mainMenu.style.top = "-100%";
-      })
+      });
     }
   }
-  count = count +1; 
-})
+  count = count + 1;
+});
 
-  
 // HOMEPAGE
 
 //sport content
-
 
 //variable to store the selected sport
 let selectedSport = 0;
@@ -57,7 +54,6 @@ let selectedSport = 0;
 //creation of sport content -- when clicking sport icon
 
 const createSport = () => {
-
   //add event click target id
   const x = event.target;
   console.log(event);
@@ -109,11 +105,16 @@ const createSport = () => {
   const changeCta = document.getElementById("card-cta");
   changeCta.innerText = `Discover more about ${sportContent[clickedId].name}`;
 
+  //not your cup of tea?
+  const backSportCta = document.getElementById("back-sport-cta");
+  backSportCta.style.display = "flex";
+  backSportCta.style.marginBottom = "2rem";
+  backSportCta.innerText = `Not into practicing ${sportContent[clickedId].name} at the moment?`;
   //or choose another sport
-  const backSportCta = document.querySelector(".cta");
-  backSportCta.style.display = "inline-block";
-  backSportCta.style.marginBottom = "5rem";
-  backSportCta.innerText = "Or explore another sport!";
+  const backSportButton = document.querySelector(".cta");
+  backSportButton.style.display = "inline-block";
+  backSportButton.style.marginBottom = "5rem";
+  backSportButton.innerText = "🎾 Emplore another sport 🏀";
 };
 
 //creation of cards content
@@ -186,12 +187,11 @@ const createCards = () => {
   changeCta.innerText = "Choose another topic";
 
   //show back to sports button
-  const backSportCta = document.querySelector(".cta");
-  backSportCta.style.display = "inline-block";
-  backSportCta.style.marginBottom = "5rem";
-  backSportCta.innerText = "Or explore another sport!";
+  const backSportButton = document.querySelector(".cta");
+  backSportButton.style.display = "inline-block";
+  backSportButton.style.marginBottom = "5rem";
+  backSportButton.innerText = "🎾 Emplore another sport 🏀";
 };
-
 
 //MOVE BACK TO HOMEPAGE
 const backHome = () => {
