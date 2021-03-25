@@ -321,6 +321,15 @@ a i {
   text-align: left;
 }
 
+.img {
+  height: 23rem;
+  width: 96%;
+  margin: auto;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 /* for mobile version */
 @media (max-width: 765px) {
   /* Main menu */
@@ -503,7 +512,7 @@ a i {
   }
 
   .img {
-    width: 80%;
+    width: 90%;
   }
   .container-img {
     height: 23rem;
@@ -525,13 +534,6 @@ a i {
 }
 
 /* ------------MEDIA ENDS HERE --------------*/
-
-.img {
-  display: auto;
-  height: 300px;
-  width: 100%;
-  margin-top: 50px;
-}
 
 /* Contact Us */
 
@@ -566,15 +568,6 @@ textarea {
   border-radius: 8px;
   cursor: pointer;
   padding: 5px 10px;
-}
-
-.img {
-  height: 23rem;
-  width: 96%;
-  margin: auto;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 p {
