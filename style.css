@@ -33,7 +33,6 @@ nav .mainMenu li a {
 	margin-right: 10px;
 }
 
-/* change color? */
 nav .mainMenu li a:hover {
 	color: #8383dc93;
 }
@@ -105,12 +104,6 @@ nav .logo {
 .dropdown-button {
 	color: #171738;
 	cursor: pointer;
-}
-
-/* Here just to signal that there are li elements are inside the SPORTS ul */
-.dropdown-button:hover,
-.dropdown-button:focus {
-	background-color: #ff937a;
 }
 
 .dropdown-content {
@@ -274,16 +267,19 @@ a i {
 	font-weight: bold;
 	padding-top: 20px;
 	padding-bottom: 10px;
+	font-weight: lighter;
 }
 
 #Inc {
 	margin-bottom: 0;
 	font-size: 12px;
+	font-weight: lighter;
 }
 #Email {
 	margin-top: 0;
 	margin-bottom: 20px;
 	font-size: 12px;
+	font-weight: lighter;
 }
 
 /* About Us */
