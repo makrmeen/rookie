@@ -49,7 +49,6 @@
   <h2>Contact Rookie</h2>
 
   <div clas=formclass>   
-
            <form id=formid>
                   <label>Full Name: </label>
                   <input type="text" class="nameInput" placeholder="Babe Ruth"></input>
@@ -59,19 +58,17 @@
                   <br>
                   <label for="message">Message</label><br>
                   <textarea type="form-control" rows="10" cols="60"></textarea>  
-
-       </form> 
-
-            <input type="checkbox" class="form-check" > <label for="suscribe">Suscribe to the Newsletter</label><br>
-            <br>
-            <button id=subutton onclick="subMess()">Submit</button> 
-            <br> <p id="thankYou"></p> <br>
-            <script>
+           </form> 
+                  <input type="checkbox" class="form-check" > <label for="suscribe">Suscribe to the Newsletter</label><br>
+                  <br>
+                  <button id=subutton onclick="subMess()">Submit</button> 
+                  <br> <p id="thankYou"></p> <br>
+        <script>
               const fname= document.querySelector(".nameInput")
               function subMess() {
                 console.log(fname.value)
               document.getElementById("thankYou").innerHTML = `Thank You for contacting us ${fname.value}!`;        }
-              </script>  
+        </script>  
    </div>  
 
 
