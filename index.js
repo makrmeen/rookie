@@ -24,48 +24,14 @@ dropdownButton.addEventListener("click", (show) => {
   }
 });
 
-//sport content
+// HOMEPAGE
 
+//variable to store the selected sport
 let selectedSport = 0;
-const sportContent = [
-  {
-    name: "Tennis",
-    picture: "https://i.ibb.co/58qrYjz/pexels-cottonbro-5739226.jpg",
-    intro:
-      "Tennis is a unique sport; it provides both aerobic (endurance) and anaerobic (fast explosive movements) training. The average point in tennis includes bursts of activity and acts to condition our bodies the same way interval training would do.",
-  },
-  {
-    name: "Basketball",
-    picture: "https://placekitten.com/200/287",
-    intro:
-      "Basketball is a cool sport that I can practice individuallu or in gruops.",
-  },
-  {
-    name: "Surf",
-    picture: "https://i.ibb.co/0V27ZcR/pexels-elle-hughes-1549180.jpg",
-    intro:
-      "Surf is a cool sport that I can practice individuallu or in gruops.",
-  },
-  {
-    name: "Climbing",
-    picture: "https://placekitten.com/200/287",
-    intro:
-      "Climbing is a cool sport that I can practice individuallu or in gruops.",
-  },
-  {
-    name: "Soccer",
-    picture: "https://placekitten.com/200/287",
-    intro:
-      "Soccer is a cool sport that I can practice individuallu or in gruops.",
-  },
-];
 
 //creation of sport content
 
 const createSport = () => {
-  //change page
-  // window.location.href = "sports.html";
-
   //add event click target id
   const x = event.target;
   console.log(event);
@@ -82,8 +48,8 @@ const createSport = () => {
   //clear everything
   container.innerHTML = "";
 
+  //BEGINNING OF CONTENT CREATION
   //add image
-
   const sportImg = document.createElement("div");
   sportImg.classList.add("img");
   sportImg.style.backgroundImage = `url("${sportContent[clickedId].picture}")`;
@@ -99,13 +65,17 @@ const createSport = () => {
   sportIntro.innerHTML = sportContent[clickedId].intro;
   container.appendChild(sportIntro);
 
+  //MOVE TO SELECTED SPORT PAGE
+
   //hide sports icons
   const firstHidden = document.getElementById("first-hide");
   firstHidden.style.display = "none";
-  //show cards icons
+
+  //show cards cta
   const showCta = document.getElementById("card-cta");
   showCta.style.display = "flex";
 
+  //show cards icons
   const showCards = document.getElementById("card-container");
   showCards.style.display = "flex";
 
@@ -120,107 +90,9 @@ const createSport = () => {
   backSportCta.innerText = "Or explore another sport!";
 };
 
-//cardscontent
-const cardsContent = [
-  [
-    {
-      name: "Health Benefits",
-      pic1: "https://i.ibb.co/swb8hM0/pexels-luka-s-dlutko-2440324.jpg",
-      title1: "One of the most complete sport",
-      topic1:
-        "Tennis is a unique sport; it provides both aerobic (endurance) and anaerobic (fast explosive movements) training. The average point in tennis includes bursts of activity and acts to condition our bodies the same way interval training would do. This has a profoundly positive effect on our heart and lungs with studies showing that playing just 3 hours a week reduces the risk of heart disease by over 50%. Furthermore, playing tennis can reduce the rate of decline of our fitness as we get older. ",
-      pic2: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
-      title2: "Tennis players live longer",
-      topic2:
-        "In a study looking at 8 different sports it was identified that tennis players had the longest life expectancy, by about 10 years! Tennis is a sport for all ages, genders, sizes and expertise levels, with benefits including maintaining healthy body composition, bone health, muscle strength and balance.",
-    },
-    {
-      name: "Cost of Practicing",
-      pic1: "https://i.ibb.co/LpVzHxt/pexels-cottonbro-5739122.jpg",
-      title1: "Cost of a course",
-      topic1:
-        "With tennis you will. With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      pic2: "https://i.ibb.co/BNG2sg8/r70-650.jpg",
-      title2: "Cost of a trainer",
-      topic2:
-        "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    },
-    {
-      name: "Level of Difficulty",
-      pic1: "https://i.ibb.co/RgpyTqX/pexels-rodnae-productions-5836917.jpg",
-      title1: "Easy to start",
-      topic1:
-        "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      pic2: "https://i.ibb.co/Vm9r55X/pexels-rodnae-productions-5837013.jpg",
-      title2: "Very difficult to improve!",
-      topic2:
-        "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    },
-    {
-      name: "Necessary Equipment",
-      pic1: "https://i.ibb.co/xChYPY8/pexels-anna-shvets-5067817.jpg",
-      title1: "Raquet, your sword!",
-      topic1:
-        "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      pic2: "https://i.ibb.co/N2HzxD3/best-tennis-bags-780x470.jpg",
-      title2: "How big is a tennis bag?",
-      topic2:
-        "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    },
-  ],
-  [
-    {
-      name: "Health Benefits",
-      pic1: "https://i.ibb.co/swb8hM0/pexels-luka-s-dlutko-2440324.jpg",
-      title1: "Basketball is good",
-      topic1:
-        "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      pic2: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
-      title2: "Pay attention to your shoulder",
-      topic2:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    },
-    {
-      name: "Basketball rocks",
-      pic1: "https://i.ibb.co/LpVzHxt/pexels-cottonbro-5739122.jpg",
-      title1: "Cost of a course",
-      topic1:
-        "With tennis you will. With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      pic2: "https://i.ibb.co/BNG2sg8/r70-650.jpg",
-      title2: "Cost of a trainer",
-      topic2:
-        "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    },
-    {
-      name: "Level of Difficulty",
-      pic1: "https://i.ibb.co/RgpyTqX/pexels-rodnae-productions-5836917.jpg",
-      title1: "Easy to start",
-      topic1:
-        "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      pic2: "https://i.ibb.co/Vm9r55X/pexels-rodnae-productions-5837013.jpg",
-      title2: "Very difficult to improve!",
-      topic2:
-        "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    },
-    {
-      name: "Necessary Equipment",
-      pic1: "https://i.ibb.co/xChYPY8/pexels-anna-shvets-5067817.jpg",
-      title1: "Raquet, your sword!",
-      topic1:
-        "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      pic2: "https://i.ibb.co/N2HzxD3/best-tennis-bags-780x470.jpg",
-      title2: "How big is a tennis bag?",
-      topic2:
-        "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    },
-  ],
-];
-//cards function
+//creation of cards content
 
 const createCards = () => {
-  //change page
-  // window.location.href = "sports.html";
-
   //add event click target id
   const x = event.target;
   console.log(event);
@@ -236,7 +108,6 @@ const createCards = () => {
   container.innerHTML = "";
 
   //add image 1
-
   const cardImg = document.createElement("div");
   cardImg.classList.add("img");
   cardImg.style.backgroundImage = `url("${cardsContent[selectedSport][clickedClass].pic1}")`;
@@ -274,22 +145,28 @@ const createCards = () => {
   topicTwo.innerHTML = cardsContent[selectedSport][clickedClass].topic2;
   container.appendChild(topicTwo);
 
+  //MOVE BACK TO SPORTS
+
   //hide cards icons
   const firstHidden = document.getElementById("first-hide");
   firstHidden.style.display = "none";
 
+  //show cards
   const showCards = document.getElementById("card-container");
   showCards.style.display = "flex";
 
+  //change cta
   const changeCta = document.getElementById("card-cta");
   changeCta.innerText = "Choose another topic";
 
+  //show back to sports button
   const backSportCta = document.querySelector(".cta");
   backSportCta.style.display = "inline-block";
   backSportCta.style.marginBottom = "5rem";
   backSportCta.innerText = "Or explore another sport!";
 };
 
+//MOVE BACK TO HOMEPAGE
 const backHome = () => {
   window.location = "index.html";
   window.scrollTo(0, 4000);
