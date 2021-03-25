@@ -5,6 +5,7 @@
     <script src = "https://kit.fontawesome.com/8187b285e6.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <a href="https://icons8.com/icon/25248/tennis-ball"></a>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,11 +25,10 @@
     <li><a href="index.html">Homepage</a></li>
 
     <li><a class = "dropdown-button">Sports</a>
-      <ul class = "dropdown-content" onclick="createSport()">
-        <li class="0">Tennis</li>
+      <ul class = "dropdown-content" id = "dropdown-content" onclick="createSport()">
+        <!-- <li class="0">Tennis</li>
         <li class="1">Surf</li>
-        <li class="2">Rock climbing</li>
-     </li>
+        <li class="2">Rock climbing</li> -->
     </ul >
   
     <li><a href="about.html">About Us</a></li>
@@ -53,8 +53,9 @@
 
     <!-- change image? -->
 <div id="first-hide">
-    <img src="https://i.ibb.co/TbtR8M9/pexels-cottonbro-4753923-1.jpg" />
-
+  <div class = "container-img">
+    <img src = "assets/Surf2.jpg" class = "main-img">
+  </div>
     <p id = "teaser">Your beginners guide to  your new sport activity. Select one sport and discover how to start practicing it.</p>
 
     <div class="break"></div>
@@ -63,19 +64,23 @@
 
 <!-- SPORTS ICON STARTS HERE -->
 <div class = "container" id="sport-container" onclick= "createSport()">
-  <div class = "0 sport-icon">
+  <div class = "sport-icon">
+    <img src= "./assets/Tennis-icon.png" class ="0" id = "tennis-icon"/>
     <h5 class = "subheading">Tennis</h5>
   </div>
-  <div class = "1 sport-icon">
-    <h5 class = "subheading">Surf</h5>
+  <div class = "sport-icon">
+    <img src ="./assets/Swimming-icon.png" class = "1" id = "swimming-icon"></i>
+    <h5 class = "subheading">Swimming</h5>
   </div>
-  <div class = "2 sport-icon">
+  <div class = "sport-icon">
+    <img src = "./assets/Climbing-icon.png" class = "2" id = "climbing-icon"></i>
     <h5 class = "subheading">Rock Climbing</h5>
   </div>
-  <div class = "2 sport-icon">
-    <h5 class = "subheading">Basketball</h5>
+  <div class = "sport-icon">
+    <img src = "./assets/Running-icon.png" class = "3" id = "running-icon"></i>
+    <h5 class = "subheading">Running</h5>
   </div>
-  </div>
+</div>
     <!-- <div class = "sport-icon">
   </div> -->
    <!-- First hide ends here-->
@@ -99,6 +104,7 @@
     <h5 class = "subheading">Necessary Equipment</h5>
   </div>
 </div>
+<h2 id="back-sport-cta"></h2>
 <button class="cta" onclick= "backHome()">Or discover another sport!</button>
 
 <!-- FOOTER -->

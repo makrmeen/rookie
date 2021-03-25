@@ -11,10 +11,9 @@ closeMenu.addEventListener("click", (close) => {
   mainMenu.style.top = "-100%";
 });
 
-//dropdown menu (Sports)
+//dropdown menu desktop (Sports)
 const dropdown = document.querySelector(".dropdown-content");
 const dropdownButton = document.querySelector(".dropdown-button");
-const closeDropdown = document.querySelector(".dropdown-closing-button");
 
 dropdownButton.addEventListener("click", (show) => {
   if (dropdown.style.display === "block") {
@@ -24,12 +23,35 @@ dropdownButton.addEventListener("click", (show) => {
   }
 });
 
+let count = 0;
+dropdownButton.addEventListener("click", (event) => {
+  const sportsArray = ["Tennis", "Surf", "Climbing"];
+  if (count <= 0) {
+    for (let i = 0; i < sportsArray.length; i++) {
+      const li = document.createElement("li");
+      const text = document.createTextNode(sportsArray[i]);
+      li.classList.add(`${i}`);
+      li.appendChild(text);
+      dropdown.appendChild(li);
+    }
+    const sportsOptions = dropdown.children;
+    for (let j = 0; j < sportsOptions.length; j++) {
+      sportsOptions[j].addEventListener("click", () => {
+        mainMenu.style.top = "-100%";
+      });
+    }
+  }
+  count = count + 1;
+});
+
 // HOMEPAGE
+
+//sport content
 
 //variable to store the selected sport
 let selectedSport = 0;
 
-//creation of sport content
+//creation of sport content -- when clicking sport icon
 
 const createSport = () => {
   //add event click target id
@@ -42,7 +64,7 @@ const createSport = () => {
   //const destination div
   const container = document.querySelector(".destination");
 
-  //scroll to the top
+  //scroll to the top - user will start at top of page
   window.scrollTo(0, 0);
 
   //clear everything
@@ -83,11 +105,16 @@ const createSport = () => {
   const changeCta = document.getElementById("card-cta");
   changeCta.innerText = `Discover more about ${sportContent[clickedId].name}`;
 
+  //not your cup of tea?
+  const backSportCta = document.getElementById("back-sport-cta");
+  backSportCta.style.display = "flex";
+  backSportCta.style.marginBottom = "2rem";
+  backSportCta.innerText = `Not into practicing ${sportContent[clickedId].name} at the moment?`;
   //or choose another sport
-  const backSportCta = document.querySelector(".cta");
-  backSportCta.style.display = "inline-block";
-  backSportCta.style.marginBottom = "5rem";
-  backSportCta.innerText = "Or explore another sport!";
+  const backSportButton = document.querySelector(".cta");
+  backSportButton.style.display = "inline-block";
+  backSportButton.style.marginBottom = "5rem";
+  backSportButton.innerText = "🎾 Emplore another sport 🏀";
 };
 
 //creation of cards content

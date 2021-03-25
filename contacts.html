@@ -46,53 +46,44 @@
 </header>
 
 <body>
+  <h2>Contact Rookie</h2>
 
+  <div clas=formclass>   
 
-  <div style="text-align:center;">   
+           <form id=formid>
+                  <label>Full Name: </label>
+                  <input type="text" class="nameInput" placeholder="Babe Ruth"></input>
+            
+                  <label>Email address: </label>
+                  <input type="text" placeholder="email@rookie.com"></input>
+      
+                  <label for="message">Message</label>
+                  <textarea type="form-control" rows="10" cols="60"></textarea>  
 
-        <h1>Contact Rookie </h1>
- 
-    <form id=formid >
-            <div class="fname">
-                <label>Full Name: </label>
-                <input type="text" placeholder="Babe Ruth"></input>
-            </div>
+       </form> 
 
-            <div class="email">
-                <label>Email address: </label>
-                <input type="text" placeholder="email@rookie.com"><br><br>
-            </div>
-    
-            <div class="message">
-                <label for="message">Message</label><br>
-                <textarea type="form-control" rows="10" cols="50"></textarea>
-            </div>
+            <input type="checkbox" class="form-check" > <label for="suscribe">Suscribe to the Newsletter</label><br>
+            <button id=subutton onclick="subMess()">Submit</button> 
+            <br> <p id="thankYou"></p> <br>
+            <script>
+              const fname= document.querySelector(".nameInput")
+              function subMess() {
+                console.log(fname.value)
+              document.getElementById("thankYou").innerHTML = `Thank You for contacting us ${fname.value}!`;        }
+              </script>  
+   </div>  
 
-            <div class="form-check">
-              <input type="checkbox">
-              <label for="suscribe">Suscribe to the Newsletter</label><br><br><br>
-             </div>
-    
-    </form> 
-        
-       <button onclick="subMess()">Submit</button><br><br>
-        <br> <p id="thankYou"></p>
-     
-        <script>
-            function myFunction() {
-            document.getElementById("thankYou").innerHTML = `Thank You for contacting us ${fname}!`;        }
-        </script>   
 
    <div class="Footer">
     <div class="Footer-Border">
-     <a href="https://fr-fr.facebook.com/WildCodeSchool/%22%3E<i class="fab fa-facebook-square"></i></a>
-     <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=de%22%3E<i class="fab fa-instagram"></i></a>
-     <a href="https://www.linkedin.com/school/wild-code-school/?originalSubdomain=de%22%3E<i class="fab fa-linkedin"></i></a>
+      <a href="https://fr-fr.facebook.com/WildCodeSchool/"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=de"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/school/wild-code-school/?originalSubdomain=de"><i class="fab fa-linkedin"></i></a>
     </div>
      <p id="Impressum">ROOKIE</p>
      <p id="Inc">Rookie Wilders Inc. 2021 All rights reserved.</p>
      <p id="Email">info@rookie.com</p>
-   </div>
+   </div>  
 
    <script src="./index.js"></script>
 </body>
