@@ -14,18 +14,39 @@
     <script src="https://kit.fontawesome.com/472ac0f0b6.js" crossorigin="anonymous"></script>
     <title>Rookie</title>
 </head>
-<body>
+
+<header>
   <nav>
     <div class = "logo"><h1>Rookie</h1></div>
+
     <div class = "openMenu"><i class="fas fa-bars"></i></div>
+
     <ul class = "mainMenu">
+
     <li><a href="index.html">Homepage</a></li>
-    <li><a href="sports.html">Sports</a></li>
+
+    <li><a class = "dropdown-button">Sports</a>
+      <ul class = "dropdown-content" id = "dropdown-content" onclick="createSport()">
+        <!-- <li class="0">Tennis</li>
+        <li class="1">Surf</li>
+        <li class="2">Rock climbing</li> -->
+    </ul >
+  
     <li><a href="about.html">About Us</a></li>
     <li><a href="contacts.html">Contact Us</a></li>
-    <div class = "closeMenu"><i class = "fa fa-times"></i></div>
-    </ul>
-   </nav>
+
+    <div class = "closeMenu"><i class = "fas fa-times"></i></div>
+  
+    <span class = "social-media">
+    <i class = "fab fa-facebook"></i>  
+    <i class = "fab fa-instagram"></i>
+    <i class = "fab fa-linkedin"></i>
+  </span>
+</ul>
+  </nav>
+</header>
+
+<body>
    <div class="About-US">
     <img class="Teammate" src="assets/Teammate Sandra.jpeg">
     <h3 class="Name">Sandra</h3>
