@@ -33,7 +33,6 @@ nav .mainMenu li a {
   margin-right: 10px;
 }
 
-/* change color? */
 nav .mainMenu li a:hover {
   color: #8383dc93;
 }
@@ -109,12 +108,6 @@ nav .logo {
 .dropdown-button {
   color: #171738;
   cursor: pointer;
-}
-
-/* Here just to signal that there are li elements are inside the SPORTS ul */
-.dropdown-button:hover,
-.dropdown-button:focus {
-  background-color: #ff937a;
 }
 
 .dropdown-content {
@@ -278,16 +271,19 @@ a i {
   font-weight: bold;
   padding-top: 20px;
   padding-bottom: 10px;
+  font-weight: lighter;
 }
 
 #Inc {
   margin-bottom: 0;
   font-size: 12px;
+  font-weight: lighter;
 }
 #Email {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 12px;
+  font-weight: lighter;
 }
 
 /* About Us */
@@ -511,24 +507,40 @@ a i {
   }
 }
 
+/* ------------MEDIA ENDS HERE --------------*/
+
+.img {
+  display: auto;
+  height: 300px;
+  width: 100%;
+  margin-top: 50px;
+}
+
 /* Contact Us */
 
 #formid {
   display: flex;
-  width: 600px;
-  flex-direction: column;
+  width: 60%;
   margin: auto;
+  flex-direction: column;
+  text-align: left;
+  padding: 50px;
+}
+input {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #subutton {
   box-shadow: 0px 0px 0px 1px #fff6f4;
   color: #ffffff;
   font-size: 16px;
-  font-family: Bebas Neue;
   background-color: #171738;
   border-radius: 8px;
   cursor: pointer;
   padding: 5px 10px;
+  margin: 15px;
+  font: Bebas neue;
 }
 
 .cta {

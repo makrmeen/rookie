@@ -49,7 +49,7 @@ const cardsContent = [
     {
       name: "Health Benefits",
       pic1: "https://i.ibb.co/swb8hM0/pexels-luka-s-dlutko-2440324.jpg",
-      title1: "Basketball is good",
+      title1: "Tennis is good",
       topic1:
         "With tennis you will train your body entirely. From the upper part and arms, to the legs.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       pic2: "https://i.ibb.co/kKq7Wqs/Schermata-2021-03-23-alle-10-24-05.png",
@@ -58,7 +58,7 @@ const cardsContent = [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     },
     {
-      name: "Basketball rocks",
+      name: "Swimming rocks",
       pic1: "https://i.ibb.co/LpVzHxt/pexels-cottonbro-5739122.jpg",
       title1: "Cost of a course",
       topic1:

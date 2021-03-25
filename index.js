@@ -17,15 +17,16 @@ const dropdownButton = document.querySelector(".dropdown-button");
 
 dropdownButton.addEventListener("click", (show) => {
   if (dropdown.style.display === "block") {
-    dropdown.style.display = "none";
-  } else {
-    dropdown.style.display = "block";
-  }
-});
+   dropdown.style.display = "none";
+} 
+  else {
+   dropdown.style.display = "block";
+      }
+  });
 
-let count = 0;
-dropdownButton.addEventListener("click", (event) => {
-  const sportsArray = ["Tennis", "Surf", "Climbing"];
+  let count = 0; 
+dropdownButton.addEventListener('click', event => { 
+  const sportsArray = ["Tennis", "Swimming", "Climbing", "Running"];
   if (count <= 0) {
     for (let i = 0; i < sportsArray.length; i++) {
       const li = document.createElement("li");
