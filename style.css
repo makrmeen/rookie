@@ -309,6 +309,7 @@ a i {
 	margin-left: 150px;
 	margin-right: 150px;
 	margin-bottom: 60px;
+	text-align: justify;
 }
 
 /* for mobile version */
@@ -484,13 +485,14 @@ a i {
 /* Contact Us */
 
 #formid {
-	width: 80%;
 	display: flex;
+	width: 600px;
 	flex-direction: column;
+	margin: auto;
 }
 
 #subutton {
-	box-shadow: 0px 0px 0px 1px #9fb4f2;
+	box-shadow: 0px 0px 0px 1px #fff6f4;
 	color: #ffffff;
 	font-size: 16px;
 	background-color: #171738;
