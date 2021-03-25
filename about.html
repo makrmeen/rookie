@@ -14,42 +14,74 @@
     <script src="https://kit.fontawesome.com/472ac0f0b6.js" crossorigin="anonymous"></script>
     <title>Rookie</title>
 </head>
-<body>
+
+<header>
   <nav>
     <div class = "logo"><h1>Rookie</h1></div>
+
     <div class = "openMenu"><i class="fas fa-bars"></i></div>
+
     <ul class = "mainMenu">
+
     <li><a href="index.html">Homepage</a></li>
-    <li><a href="sports.html">Sports</a></li>
+
+    <li><a class = "dropdown-button">Sports</a>
+      <ul class = "dropdown-content" id = "dropdown-content" onclick="createSport()">
+        <!-- <li class="0">Tennis</li>
+        <li class="1">Surf</li>
+        <li class="2">Rock climbing</li> -->
+    </ul >
+  
     <li><a href="about.html">About Us</a></li>
     <li><a href="contacts.html">Contact Us</a></li>
-    <div class = "closeMenu"><i class = "fa fa-times"></i></div>
-    </ul>
-   </nav>
-   <div class="About-US">
+
+    <div class = "closeMenu"><i class = "fas fa-times"></i></div>
+  
+    <span class = "social-media">
+    <i class = "fab fa-facebook"></i>  
+    <i class = "fab fa-instagram"></i>
+    <i class = "fab fa-linkedin"></i>
+  </span>
+</ul>
+  </nav>
+</header>
+<body>
+
+<div class="about">
+  <div class="card">
     <img class="Teammate" src="assets/Teammate Sandra.jpeg">
     <h3 class="Name">Sandra</h3>
     <p class="Description">Sandra loves putting on her running shoes and run some km to clear her head. 
       "Problems and thoughts that have been swirling around in my mind disappear when I’m deep in the rhythm of my footsteps and my favorite tunes on my mp3 player.  
       I often discover the perfect solution during my run or when I’m done with my workout."</p>
-
+  </div>
+  <div class="card">
     <img class="Teammate" src="assets/Teammate Carmen.jpeg">
     <h3 class="Name">Carmen</h3>
-    <p class="Description">Carmen started climbing one year ago. She likes climbing." It reduces syour stress. You'll become so focused on the wall, 
-      and the will to conquer your particular route, will distract you from your day-to-day stresses. What's more, it will also teach you how to solve a problem, which is in itself a great strategy to have!"</p>
-
+    <p class="Description">Carmen started climbing one year ago. She likes climbing." 
+      It reduces syour stress. You'll become so focused on the wall, 
+      and the will to conquer your particular route, will distract you from your day-to-day stresses.
+      What's more, it will also teach you how to solve a problem, which is in itself a great strategy 
+      to have!"</p>
+  </div>
+  <div class="card">
     <img class="Teammate" src="assets/Teammate Isabel.jpeg">
     <h3 class="Name">Isabel</h3>
-    <p class="Description">Isabel started swimming on a regular base after her stuy. "The first reason that I love swimming is that it can be extremely relaxing.
-      On the other hand, it can also be a fast-paced competitive sport which raises your heartbeat without stressing your body too much."" </p>
-         
+    <p class="Description">Isabel started swimming on a regular base after her stuy. 
+      "The first reason that I love swimming is that it can be extremely relaxing.
+      On the other hand, it can also be a fast-paced competitive sport which raises your 
+      heartbeat without stressing your body too much."" </p>
+  </div>
+  <div class="card">
     <img class="Teammate" src="assets/Teammate Francesco.jpeg">
     <h3 class="Name">Francesco</h3>
     <p class="Description">Francesco is a professional tennis player. He started playing with 7 years. "It is a technical sport that has beauty and elegance when played with fluidity and grace. 
       If you're having a bad day, there is nothing better than picking up a racquet and whacking a ball, letting the frustration leave your body in one fell swoop. 
       Tennis is mindfulness in motion. I play three to four times a week."</p>
-   </div>
+</div> 
 
+
+   <!---Footer ---->
     <div class="Footer">
       <div class="Footer-Border">
       <a href="https://fr-fr.facebook.com/WildCodeSchool/"><i class="fab fa-facebook-square"></i></a>
