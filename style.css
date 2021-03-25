@@ -66,12 +66,12 @@ nav .logo {
 
 /* First img */
 
-/* img {
-	display: flex;
+.main-img {
 	max-width: 79%;
-	padding: 0px 100px 0px 100px;
-	height: auto;
-} */
+	max-height: 80%;
+	display: inline;
+}
+
 .destination {
 	display: block;
 	text-align: center;
@@ -95,10 +95,6 @@ nav .logo {
 	font-size: 40px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-}
-p {
-	padding: 8px;
-	font-family: Montserrat;
 }
 
 .break {
@@ -172,43 +168,30 @@ h2 {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	flex-wrap: wrap;
-	margin: 0px 80px;
+	margin: 0px 50px;
 	padding-bottom: 120px;
 }
-/* .sport-icon {
-	display: inline;
-	justify-content: space-evenly;
-	align-items: center;
-	background: #171738;
-	border-radius: 50%;
-	width: 130px;
-	height: 130px;
-	margin: auto;
-} */
+.sport-icon {
+	display: inline-block;
+	max-width: 10%;
+}
+img {
+	width: 100%;
+	height: auto;
+	padding: 0px;
+}
 
 h5 a {
 	font-weight: lighter;
-	font-size: 30px;
 	text-decoration: none;
 	color: #171738;
 }
 .subheading {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	margin-top: 25px;
-	font-size: 21px;
+	white-space: nowrap;
+	font-size: 20px;
 	font-weight: lighter;
-}
-.container-img {
-	display: flex;
-	max-width: 20px;
-}
-
-.main-img {
-	max-width: 30%;
-	max-height: 30%;
+	text-align: center;
+	margin-top: 12px;
 }
 
 /* Sports page style */
@@ -218,11 +201,11 @@ h5 a {
 }
 
 .quote {
-  font-family: Montserrat;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	font-family: Montserrat;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 hr.solid {
@@ -231,35 +214,35 @@ hr.solid {
 }
 
 .cards-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px 100px;
-  margin: 50px 0px 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0px 100px;
+	margin: 50px 0px 50px;
 }
 
 #health-benefits,
 #gears,
 #rules,
 #FAQ {
-  width: 130px;
-  height: 130px;
-  background-color: #171738;
+	width: 130px;
+	height: 130px;
+	background-color: #171738;
 }
 #health-benefits > div {
-  margin: 15px;
+	margin: 15px;
 }
 
 #gears > div {
-  margin: 15px;
+	margin: 15px;
 }
 
 #rules > div {
-  margin: 15px;
+	margin: 15px;
 }
 
 #FAQ > div {
-  margin: 15px;
+	margin: 15px;
 }
 
 /* Footer */
@@ -420,21 +403,20 @@ a i {
 		margin-bottom: -30px;
 	}
 	.sport-icon {
-		border-radius: 50%;
-		width: 120px;
-		height: 120px;
+		max-width: 100%;
 		margin: 25px;
-		display: inline;
 	}
-	img {
+	.main-img {
 		max-width: 100%;
 	}
+
 	h5 {
 		font-size: 15px;
 		text-decoration: none;
 	}
 	.subheading {
 		margin-top: 13px;
+		justify-content: space-evenly;
 		white-space: nowrap;
 		font-size: 21px;
 		font-weight: lighter;
@@ -501,13 +483,11 @@ a i {
 
 /* Contact Us */
 
-
 #formid {
-	width: 80%:;
-	display: flex
+	width: 80%;
+	display: flex;
 	flex-direction: column;
 }
-
 
 #subutton {
 	box-shadow: 0px 0px 0px 1px #9fb4f2;
