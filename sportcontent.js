@@ -1,32 +1,23 @@
 const sportContent = [
   {
-    name: "Tennis",
-    picture: "https://i.ibb.co/58qrYjz/pexels-cottonbro-5739226.jpg",
-    intro:
-      "Tennis is a unique sport; it provides both aerobic (endurance) and anaerobic (fast explosive movements) training. The average point in tennis includes bursts of activity and acts to condition our bodies the same way interval training would do.",
+    name: " Tennis",
+    picture: "https://picsum.photos/200/300",
+    intro: "THE ONLY PERSON YOU SCHOULD TRY TO BE BETTER THAN, IS THE PERSON YOU WERE YESTERDAY - NOVAK DJOKOVIC"
+
   },
   {
-    name: "Basketball",
-    picture: "https://placekitten.com/200/287",
-    intro:
-      "Basketball is a cool sport that I can practice individuallu or in gruops.",
+    name:" Swimming",
+    picture:"https://picsum.photos/200/300",
+    intro:"DO NOT PUT A LIMIT ON ANYTHING. THE MORE YOU DREAM, THE FURTHER YOU GET - MICHAEL PHELPS",
   },
   {
-    name: "Surf",
-    picture: "https://i.ibb.co/0V27ZcR/pexels-elle-hughes-1549180.jpg",
-    intro:
-      "Surf is a cool sport that I can practice individuallu or in gruops.",
+    name: " Climbing",
+    picture: "https://picsum.photos/200/300",
+    intro:"THE BEST PART OF CLIMBING IS WHEN IT CLICKS AND GRAVITY CEASES TO EXIST - CHRIS SHARMA",
   },
   {
-    name: "Climbing",
-    picture: "https://placekitten.com/200/287",
-    intro:
-      "Climbing is a cool sport that I can practice individuallu or in gruops.",
-  },
-  {
-    name: "Soccer",
-    picture: "https://placekitten.com/200/287",
-    intro:
-      "Soccer is a cool sport that I can practice individuallu or in gruops.",
+    name:"RUNNING",
+    picture:"https://picsum.photos/200/300",
+    intro:"ONE RUN CAN CHANGE YOUR DAY. MANY RUNS CAN CHANGE YOUR LIFE.",
   },
 ];
