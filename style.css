@@ -315,6 +315,10 @@ a i {
 
 /* for mobile version */
 @media (max-width: 765px) {
+<<<<<<< HEAD
+=======
+  
+>>>>>>> b31159d442842b69581fb78f839ca62da7fa8c29
   /* Main menu */
   nav .logo {
     display: inline;
