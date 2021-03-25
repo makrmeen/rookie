@@ -108,7 +108,7 @@ const createSport = () => {
   //not your cup of tea?
   const backSportCta = document.getElementById("back-sport-cta");
   backSportCta.style.display = "flex";
-  backSportCta.style.marginBottom = "2rem";
+  backSportCta.style.marginBottom = "1.7rem";
   backSportCta.innerText = `Not into practicing ${sportContent[clickedId].name} at the moment?`;
   //or choose another sport
   const backSportButton = document.querySelector(".cta");
