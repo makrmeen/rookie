@@ -505,7 +505,7 @@ a i {
 #formid {
 	width: 600px;
 	flex-direction: column;
-	display: auto;	
+	margin: auto;
 }
 
 #subutton {
