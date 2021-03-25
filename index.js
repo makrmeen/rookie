@@ -71,6 +71,12 @@ const createSport = () => {
   container.innerHTML = "";
 
   //BEGINNING OF CONTENT CREATION
+  //add blu box
+  const bluBox = document.createElement("p");
+  bluBox.classList.add("teaser");
+  bluBox.innerText = sportContent[clickedId].emoji;
+  container.appendChild(bluBox);
+
   //add image
   const sportImg = document.createElement("div");
   sportImg.classList.add("img");
@@ -114,7 +120,7 @@ const createSport = () => {
   const backSportButton = document.querySelector(".cta");
   backSportButton.style.display = "inline-block";
   backSportButton.style.marginBottom = "5rem";
-  backSportButton.innerText = "🎾 Emplore another sport 🏀";
+  backSportButton.innerText = "🎾 Explore another sport 🏀";
 };
 
 //creation of cards content
