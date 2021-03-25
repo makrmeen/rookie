@@ -162,7 +162,7 @@ h2 {
 	justify-content: space-evenly;
 	align-items: center;
 	margin: 0px 50px;
-	padding-bottom: 120px;
+	padding-bottom: 60px;
 }
 .sport-icon {
 	display: inline-block;
@@ -181,7 +181,8 @@ h5 a {
 }
 .subheading {
 	white-space: nowrap;
-	font-size: 20px;
+	color: #171738;
+	font-size: 30px;
 	font-weight: lighter;
 	text-align: center;
 	margin-top: 12px;
@@ -320,6 +321,13 @@ a i {
 	.fa-bars {
 		color: #171738;
 	}
+	p {
+		text-align: justify;
+		text-justify: inter-word;
+		font-size: 22px;
+		font-family: Montserrat;
+		padding: 0 10%;
+	}
 	i {
 		margin-top: 5px;
 		margin-right: 30px;
@@ -413,9 +421,10 @@ a i {
 	}
 	.subheading {
 		margin-top: 13px;
+		color: #171738;
 		justify-content: space-evenly;
 		white-space: nowrap;
-		font-size: 21px;
+		font-size: 30px;
 		font-weight: lighter;
 	}
 	.fa-linkedin {
@@ -476,21 +485,47 @@ a i {
 		width: 100px;
 		height: 100px;
 	}
+
+	.img {
+		height: 23rem;
+		width: 100%;
+		margin: auto;
+	}
 }
 
 /* Contact Us */
 
 #formid {
 	display: flex;
-	width: 600px;
-	flex-direction: column;
+	width: 60%;
 	margin: auto;
+	flex-direction: column;
+	text-align: left;
+	padding: 50px;
+}
+input {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 #subutton {
 	box-shadow: 0px 0px 0px 1px #fff6f4;
 	color: #ffffff;
 	font-size: 16px;
+	background-color: #171738;
+	border-radius: 8px;
+	cursor: pointer;
+	padding: 5px 10px;
+	margin: 15px;
+	font: Bebas neue;
+}
+
+.cta {
+	box-shadow: 0px 0px 0px 1px #fff6f4;
+	color: #ffffff;
+	display: none;
+	font-size: 16px;
+	font-family: Bebas Neue;
 	background-color: #171738;
 	border-radius: 8px;
 	cursor: pointer;
