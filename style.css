@@ -312,6 +312,14 @@ a i {
   text-align: justify;
 }
 
+#formid {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+  text-align: left;
+}
+
 /* for mobile version */
 @media (max-width: 765px) {
   /* Main menu */
@@ -499,11 +507,19 @@ a i {
   .container-img {
     height: 23rem;
     width: 90%;
-    background-image: url("./assets/Tennis5.jpg");
+    background-image: url("./assets/Climbing3.jpg");
   }
 
   .profile {
     width: 90%;
+  }
+
+  #formid {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    text-align: left;
   }
 }
 
@@ -518,16 +534,11 @@ a i {
 
 /* Contact Us */
 
-#formid {
-  display: flex;
-  width: 60%;
-  margin: auto;
-  flex-direction: column;
-  text-align: left;
-  padding: 50px;
-}
 input {
   padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+textarea {
   margin-bottom: 10px;
 }
 
