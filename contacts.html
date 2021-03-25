@@ -5,14 +5,15 @@
     <script src = "https://kit.fontawesome.com/8187b285e6.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <a href="https://icons8.com/icon/25248/tennis-ball"></a>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/472ac0f0b6.js" crossorigin="anonymous"></script>
-    <title>Contact Us</title>
+    <title>Rookie</title>
 </head>
 
-
+<!-- MENU STARTS HERE -->
 <header>
   <nav>
     <div class = "logo"><h1>Rookie</h1></div>
@@ -24,20 +25,19 @@
     <li><a href="index.html">Homepage</a></li>
 
     <li><a class = "dropdown-button">Sports</a>
-      <ul class = "dropdown-content">
-        <li><a href = "tennis.html">Tennis</a></li>
-        <li><a href = "#">Surf</a></li>
-        <li><a href = "#">Rock climbing</a></li>
-     </li>
+      <ul class = "dropdown-content" id = "dropdown-content" onclick="createSport()">
+        <!-- <li class="0">Tennis</li>
+        <li class="1">Surf</li>
+        <li class="2">Rock climbing</li> -->
     </ul >
-
+  
     <li><a href="about.html">About Us</a></li>
     <li><a href="contacts.html">Contact Us</a></li>
 
     <div class = "closeMenu"><i class = "fas fa-times"></i></div>
-
+  
     <span class = "social-media">
-    <i class = "fab fa-facebook"></i>
+    <i class = "fab fa-facebook"></i>  
     <i class = "fab fa-instagram"></i>
     <i class = "fab fa-linkedin"></i>
   </span>
@@ -47,22 +47,23 @@
 
 <body>
   <h2>Contact Rookie</h2>
-
-  <div clas=formclass>   
+  <div class=formclass>   
               <form id=formid>
                       <label>Full Name: </label>
-                      <input type="text" class="nameInput" placeholder="Babe Ruth"></input>
+                      <input type="text" class="nameInput" placeholder="Babe Ruth"></input>                       
+
                 
                       <label>Email address: </label>
-                      <input type="text" placeholder="email@rookie.com"></input><br>
-                      <br>
-                      <label for="message">Message</label><br>
-                      <textarea type="form-control" rows="10" cols="60"></textarea>  
+                      <input type="text" placeholder="email@rookie.com"></input>                      
+
+                      
+                      <label for="message">Message</label>
+                      <textarea type="form-control" rows="10"></textarea>  
               </form> 
-                      <input type="checkbox" class="form-check" > <label for="suscribe">Suscribe to the Newsletter</label><br>
-                      <br>
+                      <input type="checkbox" class="form-check" > <label for="suscribe">Suscribe to the Newsletter</label>
+                    <br>
                       <button id=subutton onclick="subMess()">Submit</button> 
-                      <br> <p id="thankYou"></p> <br>
+                      <br> <p id="thankYou"></p> 
             <script>
                   const fname= document.querySelector(".nameInput")
                   function subMess() {

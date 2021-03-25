@@ -499,22 +499,32 @@ a i {
 
 /* Contact Us */
 
+
+
+
 #formid {
-  display: flex;
-  width: 600px;
-  flex-direction: column;
-  margin: auto;
+	display: flex;
+	width: 60%;
+	margin: auto;
+	flex-direction: column;
+	text-align: left;
+	padding: 50px;
 }
+ input {
+	 padding-bottom: 10px;
+	 margin-bottom: 10px;
+ }
 
 #subutton {
-  box-shadow: 0px 0px 0px 1px #fff6f4;
-  color: #ffffff;
-  font-size: 16px;
-  font-family: Bebas Neue;
-  background-color: #171738;
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 5px 10px;
+	box-shadow: 0px 0px 0px 1px #fff6f4;
+	color: #ffffff;
+	font-size: 16px;
+	background-color: #171738;
+	border-radius: 8px;
+	cursor: pointer;
+	padding: 5px 10px;
+	margin: 15px;
+	font: Bebas neue;
 }
 
 .cta {
