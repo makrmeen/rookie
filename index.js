@@ -187,10 +187,10 @@ const createCards = () => {
   changeCta.innerText = "Choose another topic";
 
   //show back to sports button
-  const backSportCta = document.querySelector(".cta");
-  backSportCta.style.display = "inline-block";
-  backSportCta.style.marginBottom = "5rem";
-  backSportCta.innerText = "Or explore another sport!";
+  const backSportButton = document.querySelector(".cta");
+  backSportButton.style.display = "inline-block";
+  backSportButton.style.marginBottom = "5rem";
+  backSportButton.innerText = "🎾 Emplore another sport 🏀";
 };
 
 //MOVE BACK TO HOMEPAGE

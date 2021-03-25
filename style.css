@@ -83,18 +83,6 @@ nav .logo {
   display: none;
 }
 
-.cta {
-  box-shadow: 0px 0px 0px 1px #9fb4f2;
-  color: #ffffff;
-  font-size: 20 px;
-  font-family: Bebas Neue;
-  background-color: #171738;
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 5px 10px;
-  display: none;
-}
-
 #back-sport-cta {
   display: none;
 }
@@ -107,10 +95,6 @@ nav .logo {
   font-size: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
-}
-p {
-  padding: 8px;
-  font-family: Montserrat;
 }
 
 .break {
@@ -184,9 +168,8 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 0px 80px;
-  padding-bottom: 120px;
+  margin: 0px 50px;
+  padding-bottom: 60px;
 }
 .sport-icon {
   display: inline-block;
@@ -200,26 +183,16 @@ img {
 
 h5 a {
   font-weight: lighter;
-  font-size: 30px;
   text-decoration: none;
   color: #171738;
 }
 .subheading {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 25px;
-  font-size: 21px;
+  white-space: nowrap;
+  color: #171738;
+  font-size: 30px;
   font-weight: lighter;
-}
-.container-img {
-  display: flex;
-  max-width: 20px;
-}
-
-.main-img {
-  max-width: 30%;
-  max-height: 30%;
+  text-align: center;
+  margin-top: 12px;
 }
 
 /* Sports page style */
@@ -352,6 +325,13 @@ a i {
   .fa-bars {
     color: #171738;
   }
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 22px;
+    font-family: Montserrat;
+    padding: 0 10%;
+  }
   i {
     margin-top: 5px;
     margin-right: 30px;
@@ -432,23 +412,23 @@ a i {
     margin-bottom: -30px;
   }
   .sport-icon {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    max-width: 100%;
     margin: 25px;
-    display: inline;
   }
-  img {
+  .main-img {
     max-width: 100%;
   }
+
   h5 {
     font-size: 15px;
     text-decoration: none;
   }
   .subheading {
     margin-top: 13px;
+    color: #171738;
+    justify-content: space-evenly;
     white-space: nowrap;
-    font-size: 21px;
+    font-size: 30px;
     font-weight: lighter;
   }
   .fa-linkedin {
@@ -509,25 +489,38 @@ a i {
     width: 100px;
     height: 100px;
   }
+
+  .img {
+    height: 23rem;
+    width: 100%;
+    margin: auto;
+  }
 }
 
 /* Contact Us */
 
 #formid {
-<<<<<<< HEAD
+  display: flex;
   width: 600px;
   flex-direction: column;
   margin: auto;
-=======
-	width: 600px;
-	flex-direction: column;
-	margin: auto;
->>>>>>> 6a3c7d9a9e40a296a59ad560d775b26bb3018d76
 }
 
 #subutton {
-  box-shadow: 0px 0px 0px 1px #9fb4f2;
+  box-shadow: 0px 0px 0px 1px #fff6f4;
   color: #ffffff;
+  font-size: 16px;
+  font-family: Bebas Neue;
+  background-color: #171738;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.cta {
+  box-shadow: 0px 0px 0px 1px #fff6f4;
+  color: #ffffff;
+  display: none;
   font-size: 16px;
   font-family: Bebas Neue;
   background-color: #171738;
