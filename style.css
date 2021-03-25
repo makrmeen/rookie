@@ -494,26 +494,12 @@ a i {
 }
 
 .cta {
-  box-shadow: inset 0px 1px 0px 0px #216ecc;
-  background: linear-gradient(to bottom, #0055b0 5%, #171738; 100%);
-  background-color: #171738;
-  border-radius: 18px;
-  border: 1px solid #337fed;
-  display: none;
-  cursor: pointer;
+  box-shadow: 0px 0px 0px 1px #9fb4f2;
   color: #ffffff;
+  font-size: 16px;
   font-family: Bebas Neue;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 12px 24px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #134c85;
-}
-.cta:hover {
-  background: linear-gradient(to bottom, #02317d 5%, #0055b0 100%);
-  background-color: #02317d;
-}
-.cta:active {
-  position: relative;
-  top: 1px;
+  background-color: #171738;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 5px 10px;
 }
