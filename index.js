@@ -114,7 +114,7 @@ const createSport = () => {
   const backSportButton = document.querySelector(".cta");
   backSportButton.style.display = "inline-block";
   backSportButton.style.marginBottom = "5rem";
-  backSportButton.innerText = "🎾 Emplore another sport 🏀";
+  backSportButton.innerText = "🎾 Explore another sport 🏀";
 };
 
 //creation of cards content
