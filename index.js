@@ -26,7 +26,7 @@ dropdownButton.addEventListener("click", (show) => {
 
   let count = 0; 
 dropdownButton.addEventListener('click', event => { 
-  const sportsArray = ["Tennis", "Swimming", "Rock Climbing", "Running"];
+  const sportsArray = ["Tennis", "Swimming", "Climbing", "Running"];
   if (count <= 0) {
     for (let i = 0; i < sportsArray.length; i++) {
       const li = document.createElement("li");
@@ -109,7 +109,7 @@ const createSport = () => {
   //not your cup of tea?
   const backSportCta = document.getElementById("back-sport-cta");
   backSportCta.style.display = "flex";
-  backSportCta.style.marginBottom = "2rem";
+  backSportCta.style.marginBottom = "1.7rem";
   backSportCta.innerText = `Not into practicing ${sportContent[clickedId].name} at the moment?`;
   //or choose another sport
   const backSportButton = document.querySelector(".cta");
@@ -191,7 +191,7 @@ const createCards = () => {
   const backSportButton = document.querySelector(".cta");
   backSportButton.style.display = "inline-block";
   backSportButton.style.marginBottom = "5rem";
-  backSportButton.innerText = "🎾 Emplore another sport 🏀";
+  backSportButton.innerText = "🎾 Explore another sport 🏀";
 };
 
 //MOVE BACK TO HOMEPAGE

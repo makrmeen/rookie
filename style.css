@@ -1,291 +1,294 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: Bebas Neue;
-	font-weight: lighter;
-	background: #fff6f4;
-	text-align: center;
+  font-family: Bebas Neue;
+  font-weight: lighter;
+  background: #fff6f4;
+  text-align: center;
 }
 
 /* Nav bar */
 nav {
-	background: #fff6f4;
-	display: flex;
-	justify-content: space-between;
+  background: #fff6f4;
+  display: flex;
+  justify-content: space-between;
 }
 nav .mainMenu {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
 }
 
 nav .mainMenu li a {
-	display: inline-block;
-	padding: 25px;
-	text-decoration: none;
-	color: #171738;
-	font-size: 18px;
-	margin-right: 10px;
+  display: inline-block;
+  padding: 25px;
+  text-decoration: none;
+  color: #171738;
+  font-size: 18px;
+  margin-right: 10px;
 }
 
 nav .mainMenu li a:hover {
-	color: #8383dc93;
+  color: #8383dc93;
 }
 
 nav .openMenu {
-	margin: 10px;
-	display: none;
-	cursor: pointer;
+  margin: 10px;
+  display: none;
+  cursor: pointer;
 }
 
 nav .mainMenu .closeMenu,
 .social-media {
-	font-size: 2rem;
-	display: none;
-	cursor: pointer;
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 nav .logo {
-	padding: 10px;
-	margin: 6px;
-	font-size: 30px;
-	font-weight: lighter;
-	cursor: pointer;
-	color: #171738;
-	margin-left: 20px;
+  padding: 10px;
+  margin: 6px;
+  font-size: 30px;
+  font-weight: lighter;
+  cursor: pointer;
+  color: #171738;
+  margin-left: 20px;
 }
 
 /* First img */
 
-.main-img {
-	max-width: 79%;
-	max-height: 80%;
-	display: inline;
+.container-img {
+  height: 23rem;
+  width: 96%;
+  background-image: url("./assets/Climbing3.jpg");
+  margin: auto;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .destination {
-	display: block;
-	text-align: center;
+  display: block;
+  text-align: center;
 }
 #card-container {
-	display: none;
+  display: none;
 }
 #card-cta {
-	display: none;
+  display: none;
 }
 
 #back-sport-cta {
-	display: none;
+  display: none;
 }
 
 .h2special {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #171738;
-	font-size: 40px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #171738;
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .break {
-	height: 30px;
+  height: 30px;
 }
-
 
 /* DROPDOWN MENU */
 .dropdown-button {
-	color: #171738;
-	cursor: pointer;
+  color: #171738;
+  cursor: pointer;
 }
 
 .dropdown-content {
-	display: none;
-	position: absolute;
-	color: #171738;
-	background: #fff6f4;
-	min-width: 160px;
-	padding: 12px 16px;
-	z-index: 1;
+  display: none;
+  position: absolute;
+  color: #171738;
+  background: #fff6f4;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 1;
 }
 
 .dropdown-content a {
-	padding: 12px 16px;
-	text-decoration: none;
-	display: inline-block;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .show {
-	display: block;
+  display: block;
 }
 
 .dropdown-closing-button {
-	display: none;
+  display: none;
 }
 
-#teaser {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: Montserrat;
-	background: #171738;
-	color: #fff6f4;
-	font-size: 16px;
-	font-weight: bold;
-	text-justify: inter-cluster;
-	height: 40px;
-	padding: 50px;
-	margin-left: 100px;
-	margin-right: 100px;
+.teaser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  background: #171738;
+  color: #fff6f4;
+  font-size: 20px;
+  font-weight: bold;
+  text-justify: inter-cluster;
+  padding: 1% 1%;
+  margin: 2% 2%;
+  text-align: center;
 }
 i {
-	display: none;
+  display: none;
 }
 h2 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #171738;
-	font-size: 30px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #171738;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .container {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	margin: 0px 50px;
-	padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10%;
+  padding-bottom: 60px;
 }
 .sport-icon {
-	display: inline-block;
-	max-width: 10%;
+  display: inline-block;
+  max-width: 18%;
 }
 img {
-	width: 100%;
-	height: auto;
-	padding: 0px;
+  width: 80%;
+  height: auto;
+  padding: 0px;
 }
 
 h5 a {
-	font-weight: lighter;
-	text-decoration: none;
-	color: #171738;
+  font-weight: lighter;
+  text-decoration: none;
+  color: #171738;
 }
 .subheading {
-	white-space: nowrap;
-	color: #171738;
-	font-size: 30px;
-	font-weight: lighter;
-	text-align: center;
-	margin-top: 12px;
+  white-space: nowrap;
+  color: #171738;
+  font-size: 30px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 12px;
 }
 
 /* Sports page style */
 .content-heading {
-	font-weight: lighter;
-	font-size: 35px;
+  font-weight: lighter;
+  font-size: 35px;
 }
 
 .quote {
-	font-family: Montserrat;
-	font-size: 18px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 hr.solid {
-	border-top: 1px solid black;
-	margin: 0px 150px 0px 150px;
+  border-top: 1px solid black;
+  margin: 0px 150px 0px 150px;
 }
 
 .cards-container {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 0px 100px;
-	margin: 50px 0px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 100px;
+  margin: 50px 0px 50px;
 }
 
 #health-benefits,
 #gears,
 #rules,
 #FAQ {
-	width: 130px;
-	height: 130px;
-	background-color: #171738;
+  width: 130px;
+  height: 130px;
+  background-color: #171738;
 }
 #health-benefits > div {
-	margin: 15px;
+  margin: 15px;
 }
 
 #gears > div {
-	margin: 15px;
+  margin: 15px;
 }
 
 #rules > div {
-	margin: 15px;
+  margin: 15px;
 }
 
 #FAQ > div {
-	margin: 15px;
+  margin: 15px;
 }
 
 /* Footer */
 .Footer {
-	position: inherit;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: auto;
-	background-color: #fff6f4;
-	text-align: center;
+  position: inherit;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #fff6f4;
+  text-align: center;
 }
 
 a i {
-	font-size: 30px;
-	padding: 10px;
-	color: #171738;
+  font-size: 30px;
+  padding: 10px;
+  color: #171738;
 }
 
 .Footer-Border {
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
-	padding-top: 20px;
-	padding-bottom: 20px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #Impressum {
-	font-size: 15px;
-	font-weight: bold;
-	padding-top: 20px;
-	padding-bottom: 10px;
-	font-weight: lighter;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: lighter;
 }
 
 #Inc {
-	margin-bottom: 0;
-	font-size: 12px;
-	font-weight: lighter;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: lighter;
 }
 #Email {
-	margin-top: 0;
-	margin-bottom: 20px;
-	font-size: 12px;
-	font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 /* About Us */
 
+<<<<<<< HEAD
 .card {
 	display: grid;
 	grid-template-columns: reapeat(auto-fit, minimal(200px, 1fr));
@@ -306,10 +309,21 @@ a i {
 	margin-top: 50px;
 	margin-bottom: 0px;
 	display: flex;
+=======
+.Teammate {
+  border-radius: 50%;
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  display: flex;
+>>>>>>> 7dd3c145b188eb3b360be57d513f74d52a78faef
 }
 */ 
 
 .Name {
+<<<<<<< HEAD
 	font-size: 25px
 }
 
@@ -317,6 +331,19 @@ a i {
 	font-size: 20px;
 	
 
+=======
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.Description {
+  font-size: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 60px;
+  text-align: justify;
+>>>>>>> 7dd3c145b188eb3b360be57d513f74d52a78faef
 }
 
 /* for mobile version */
@@ -341,7 +368,7 @@ a i {
     text-justify: inter-word;
     font-size: 22px;
     font-family: Montserrat;
-    padding: 0 10%;
+    padding: 10% 10% 20% 10%;
   }
   i {
     margin-top: 5px;
@@ -381,9 +408,10 @@ a i {
     color: #fff6f4;
     font-size: 25px;
   }
-  #teaser {
-    font-size: 14px;
-    margin: 0px;
+  .teaser {
+    font-size: 16px;
+    margin: 5% 5%;
+    padding: 5% 5%;
   }
 
   nav .mainMenu .closeMenu {
@@ -427,7 +455,10 @@ a i {
     margin: 25px;
   }
   .main-img {
-    max-width: 100%;
+    height: 23rem;
+    width: 100%;
+    margin: auto;
+    background-image: "./assets/Tennis-field.jpg";
   }
 
   h5 {
@@ -502,9 +533,16 @@ a i {
   }
 
   .img {
+    width: 80%;
+  }
+  .container-img {
     height: 23rem;
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    background-image: url("./assets/Tennis5.jpg");
+  }
+
+  .profile {
+    width: 90%;
   }
 }
 
@@ -512,48 +550,115 @@ a i {
 
 
 .img {
+<<<<<<< HEAD
 	display: auto;
 	height: 300px;
 	width: 100%;
 	margin-top: 50px; 
+=======
+  display: auto;
+  height: 300px;
+  width: 100%;
+  margin-top: 50px;
+>>>>>>> 7dd3c145b188eb3b360be57d513f74d52a78faef
 }
-
 
 /* Contact Us */
 
 #formid {
-	display: flex;
-	width: 60%;
-	margin: auto;
-	flex-direction: column;
-	text-align: left;
-	padding: 50px;
+  display: flex;
+  width: 60%;
+  margin: auto;
+  flex-direction: column;
+  text-align: left;
+  padding: 50px;
 }
 input {
-	padding-bottom: 10px;
-	margin-bottom: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #subutton {
-	box-shadow: 0px 0px 0px 1px #fff6f4;
-	color: #ffffff;
-	font-size: 16px;
-	background-color: #171738;
-	border-radius: 8px;
-	cursor: pointer;
-	padding: 5px 10px;
-	margin: 15px;
-	font: Bebas neue;
+  box-shadow: 0px 0px 0px 1px #fff6f4;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Bebas Neue;
+  background-color: #171738;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 15px;
+  font: Bebas neue;
 }
 
 .cta {
-	box-shadow: 0px 0px 0px 1px #fff6f4;
-	color: #ffffff;
-	display: none;
-	font-size: 16px;
-	font-family: Bebas Neue;
-	background-color: #171738;
-	border-radius: 8px;
-	cursor: pointer;
-	padding: 5px 10px;
+  box-shadow: 0px 0px 0px 1px #fff6f4;
+  color: #ffffff;
+  display: none;
+  font-size: 16px;
+  font-family: Bebas Neue;
+  background-color: #171738;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.img {
+  height: 23rem;
+  width: 80%;
+  margin: auto;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+p {
+  padding: 0 10% 5% 10%;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 2;
+  text-align: justify;
+}
+
+/* About us */
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+.profile {
+  width: 500px;
+}
+
+.teaser-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  background: #171738;
+  color: #fff6f4;
+  font-size: 20px;
+  font-weight: bold;
+  text-justify: inter-cluster;
+  padding: 1% 1%;
+  margin: 2% 10%;
+  text-align: center;
+}
+
+/* Impressum */
+.impressum {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.impressum-p {
+  font-size: 12px;
+  font-family: Bebas Neue;
+  text-align: center;
+  padding: 0;
 }
