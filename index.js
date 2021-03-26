@@ -140,6 +140,11 @@ const createCards = () => {
   //clear everything
   container.innerHTML = "";
 
+  //add blu box
+  const bluBox = document.createElement("p");
+  bluBox.classList.add("teaser");
+  bluBox.innerText = `${sportContent[selectedSport].name}`;
+  container.appendChild(bluBox);
   //add image 1
   const cardImg = document.createElement("div");
   cardImg.classList.add("img");
@@ -147,10 +152,10 @@ const createCards = () => {
   container.appendChild(cardImg);
 
   //add page name
-  const name = document.createElement("h2");
-  name.innerText = cardsContent[selectedSport][clickedClass].name;
-  name.classList.add("h2special");
-  container.appendChild(name);
+  const bluBoxTwo = document.createElement("p");
+  bluBoxTwo.classList.add("teaser");
+  bluBoxTwo.innerText = cardsContent[selectedSport][clickedClass].name;
+  container.appendChild(bluBoxTwo);
 
   //add title 1
   const titleOne = document.createElement("h2");
