@@ -1,8 +1,7 @@
 const sportContent = [
   {
     name: " Tennis",
-    picture:
-      "https://images.pexels.com/photos/1432039/pexels-photo-1432039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    picture: "https://i.ibb.co/RgpyTqX/pexels-rodnae-productions-5836917.jpg",
     intro:
       "THE ONLY PERSON YOU SCHOULD TRY TO BE BETTER THAN, IS THE PERSON YOU WERE YESTERDAY - NOVAK DJOKOVIC",
     emoji: "🎾 🎾 🎾",
@@ -11,6 +10,7 @@ const sportContent = [
     name: " Swimming",
     picture:
       "https://images.pexels.com/photos/1263348/pexels-photo-1263348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+
     intro:
       "DO NOT PUT A LIMIT ON ANYTHING. THE MORE YOU DREAM, THE FURTHER YOU GET",
     emoji: "🏊🏻 🏊🏻 🏊🏻",
