@@ -174,11 +174,16 @@ h2 {
 	max-width: 18%;
 	cursor: pointer;
 }
+.sport-icon:hover {
+  box-shadow: 18px 10px 40px rgba(0, 0, 0, 0.5);
+  background-color: #de6449;
+}
 img {
-	width: 80%;
-	height: auto;
-	padding: 0px;
-	cursor: pointer;
+  width: 80%;
+  height: auto;
+  padding: 0px;
+  margin-top: 5%;
+
 }
 
 h5 a {
@@ -335,7 +340,6 @@ a i {
 
 /* for mobile version */
 @media (max-width: 765px) {
-<<<<<<< HEAD
 	/* Main menu */
 	nav .logo {
 		display: inline;
@@ -535,7 +539,6 @@ a i {
 		flex-direction: column;
 		text-align: left;
 	}
-=======
   /* Main menu */
   nav .logo {
     display: inline;
@@ -736,7 +739,8 @@ a i {
     flex-direction: column;
     text-align: left;
   }
->>>>>>> 7da4a33454938e85740b471b454327a4c9e3dce8
+=======
+>>>>>>> 541644094a200b43af2e13d1b8b22bb4f5eed4ac
 }
 
 /* ------------MEDIA ENDS HERE --------------*/
