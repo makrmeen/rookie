@@ -174,11 +174,16 @@ h2 {
 	max-width: 18%;
 	cursor: pointer;
 }
+.sport-icon:hover {
+  box-shadow: 18px 10px 40px rgba(0, 0, 0, 0.5);
+  background-color: #de6449;
+}
 img {
-	width: 80%;
-	height: auto;
-	padding: 0px;
-	cursor: pointer;
+  width: 80%;
+  height: auto;
+  padding: 0px;
+  margin-top: 5%;
+
 }
 
 h5 a {
