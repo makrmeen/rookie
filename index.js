@@ -17,15 +17,14 @@ const dropdownButton = document.querySelector(".dropdown-button");
 
 dropdownButton.addEventListener("click", (show) => {
   if (dropdown.style.display === "block") {
-   dropdown.style.display = "none";
-} 
-  else {
-   dropdown.style.display = "block";
-      }
-  });
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+});
 
-  let count = 0; 
-dropdownButton.addEventListener('click', event => { 
+let count = 0;
+dropdownButton.addEventListener("click", (event) => {
   const sportsArray = ["Tennis", "Swimming", "Climbing", "Running"];
   if (count <= 0) {
     for (let i = 0; i < sportsArray.length; i++) {
@@ -72,6 +71,12 @@ const createSport = () => {
   container.innerHTML = "";
 
   //BEGINNING OF CONTENT CREATION
+  //add blu box
+  const bluBox = document.createElement("p");
+  bluBox.classList.add("teaser");
+  bluBox.innerText = sportContent[clickedId].emoji;
+  container.appendChild(bluBox);
+
   //add image
   const sportImg = document.createElement("div");
   sportImg.classList.add("img");
@@ -115,7 +120,7 @@ const createSport = () => {
   const backSportButton = document.querySelector(".cta");
   backSportButton.style.display = "inline-block";
   backSportButton.style.marginBottom = "5rem";
-  backSportButton.innerText = "🎾 Emplore another sport 🏀";
+  backSportButton.innerText = "🎾 Explore another sport 🏀";
 };
 
 //creation of cards content
@@ -191,7 +196,7 @@ const createCards = () => {
   const backSportButton = document.querySelector(".cta");
   backSportButton.style.display = "inline-block";
   backSportButton.style.marginBottom = "5rem";
-  backSportButton.innerText = "🎾 Emplore another sport 🏀";
+  backSportButton.innerText = "🎾 Explore another sport 🏀";
 };
 
 //MOVE BACK TO HOMEPAGE
